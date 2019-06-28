@@ -1,7 +1,7 @@
 <?php include 'header.php';
 if (!$_GET) 
 {
-   header('Location:IndexAdministrador.php?pagina=1');
+   header('Location:IndexAdministrador.php?pagina=1'); /// este es un comentario
 }
 ?>
 <div class="container"> <!--Contenedor indica que lo que este dentro sera centrado--->
