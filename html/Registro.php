@@ -95,12 +95,14 @@ $id=1;
 $Nombre=$_POST["Nombre"];
 $ApellidoP=$_POST["ApellidoP"];     $ApellidoM=$_POST["ApellidoM"];
 $Correo=$_POST["Correo"];  $Contra=$_POST["Contrasena"];
+include("Codificacion.php"); // se incluye el archivo codificacion 
+$ContraEncriptada=codificar($Contra);// mandar a llamar la funcion para encriptar la contraseña
 $Dependencia=1;
 $Rol=1;
 include 'Conexion.php';
 $stmt=$conn->prepare("call sp_Insertar_Usuarios(?,?,?,?,?,?,?)");
 $stmt->bindParam(1,$Correo, PDO::PARAM_STR);
-$stmt->bindParam(2,$clave, PDO::PARAM_STR);
+$stmt->bindParam(2,$ContraEncriptada, PDO::PARAM_STR); //se manda como parametro la contraseña encriptada 
 $stmt->bindParam(3,$Nombre, PDO::PARAM_STR);
 $stmt->bindParam(4,$ApellidoP, PDO::PARAM_STR);
 $stmt->bindParam(5,$ApellidoM, PDO::PARAM_STR);
