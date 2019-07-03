@@ -1,5 +1,5 @@
 <?php include 'header.php';
-if (!$_GET $_GET['pagina']<1) 
+if (!$_GET || $_GET['pagina']<1) 
 {
    header('Location:IndexAdministrador.php?pagina=1'); /// este es un comentario
 }
