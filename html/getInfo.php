@@ -11,7 +11,7 @@ $token=$_COOKIE["token"];
 			$idUsuarios=$User['idUsuario'];
 			echo $idUsuarios;
 		}
-		$getData = $conn->prepare('SELECT correoElectronico,Nombre,apellidoPaterno,apellidoMaterno,idDependencia,idRol FROM usuarios where idUsuarios='.'\''.$idUsuarios.'\'');  //se obtienen los datos del usuario
+		$getData = $conn->prepare('SELECT correoElectronico,Nombre,apellidoPaterno,apellidoMaterno,idDependencia,idRol FROM usuarios where idUsuario='.'\''.$idUsuarios.'\'');  //se obtienen los datos del usuario
 		$getData->execute(); //se ejecuta la consulta
 		$resultado = $getData->fetchAll(); //se obtienen los datos de la consulta
 		if($getData->rowCount()>0){
