@@ -7,7 +7,7 @@ USE Gestion_Plan_Desarrollo;
 CREATE TABLE usuarios (
   idUsuario INT NOT NULL AUTO_INCREMENT,
   correoElectronico VARCHAR(45) NOT NULL,
-  contraseña VARCHAR(45) NOT NULL,
+  contrasena VARCHAR(200) NOT NULL,
   Nombre VARCHAR(45) NOT NULL,
   apellidoPaterno VARCHAR(45) NOT NULL,
   apellidoMaterno VARCHAR(45) NOT NULL,
