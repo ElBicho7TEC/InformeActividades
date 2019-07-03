@@ -8,8 +8,8 @@ $resultado = $login->fetchAll(); //se obtienen los datos de la consulta
 $totalUsuarios=$login->rowCount(); //se cuenta el numero de registros
 if($totalUsuarios>0){
 	foreach ($resultado as $User) { //se extraen los datos
-		$idUsuarios=$User['idUsuarios'];
-		$contraseña=$User['contraseña'];
+		$idUsuarios=$User['idUsuario'];
+		$contraseña=$User['contrasena'];
 		$idDependencia=$User['idDependencia'];
 		$idRol=$User['idRol'];
 	}
