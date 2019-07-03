@@ -3,7 +3,7 @@
 <?php
 include("conexion.php");
 $token=$_COOKIE["token"];
-	$getID = $conn->prepare('SELECT idUsuario FROM tokensesion where token='.'\''.$token.'\'');  //se obtienen el id del usuario loggeado
+	$getID = $conn->prepare('SELECT idUsuario FROM tokensesion where token='.'\''.$token.'\' and expira>'.'\''.date('Y-m-d').'\'');  //se obtienen el id del usuario loggeado
 	$getID->execute(); //se ejecuta la consulta
 	$resultado = $getID->fetchAll(); //se obtienen los datos de la consulta
 	if($getID->rowCount()>0){
