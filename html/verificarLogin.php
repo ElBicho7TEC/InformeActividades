@@ -16,6 +16,9 @@ if($totalUsuarios>0){
 	include("Decodificacion.php"); // se incluye el archivo de desencriptacion 
     $Contradesencriptada=decodificar($contraseña); //se ejecuta la funcion de desencriptar
 	  if($pass==$Contradesencriptada){//compara la contraseña ingresada con aquella que obtuvimos de la BD, si entra, asigna las cookies del usuario
+	  	$deleteOldToken = $conn->prepare('DELETE FROM `gestion_plan_desarrollo`.`tokensesion` WHERE idUsuario = :idUsuario;');  //se prepara delete del token previo del usuario
+		$deleteOldToken->bindParam(':idUsuario',$idUsuarios);//asignacion de variables
+		$deleteOldToken->execute();
 		$token = bin2hex(random_bytes(20)); //Genera un token aleatorio con longitud de 20 caracteres
 		$date = strtotime("+30 day"); //calcula la fecha actual y le agrega 30 días para obtener la vigencia de la sesión, modificar el 30 por el número deseado si se requiere
 		$insertToken = $conn->prepare('INSERT INTO `gestion_plan_desarrollo`.`tokensesion` VALUES (:token,:idUsuario,:date) ;');  //se prepara inserción de el token de sesion a la BD
