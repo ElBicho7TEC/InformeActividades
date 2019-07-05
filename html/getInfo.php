@@ -9,7 +9,6 @@ $token=$_COOKIE["token"];
 	if($getID->rowCount()>0){
 		foreach ($resultado as $User) { //se extraen los datos
 			$idUsuarios=$User['idUsuario'];
-			echo $idUsuarios;
 		}
 		$getData = $conn->prepare('SELECT correoElectronico,Nombre,apellidoPaterno,apellidoMaterno,idDependencia,idRol FROM usuarios where idUsuario='.'\''.$idUsuarios.'\'');  //se obtienen los datos del usuario
 		$getData->execute(); //se ejecuta la consulta
