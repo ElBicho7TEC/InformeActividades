@@ -105,8 +105,6 @@ CREATE TABLE Historial_Actividad(
   Descripción varchar(500) not null
 );
 
-
-
 #Procedimiento almacenado para modificar Roles
 DELIMITER //
 create procedure sp_modificarRoles(var_idRol INT,var_tipoRol VARCHAR(45))
@@ -167,4 +165,70 @@ end
 //
 DELIMITER ;
 
+#Procedimiento almacenado para insertar Actividades 
+DELIMITER //
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_Insertar_Actividades`(
+	in nombre_Actividad VARCHAR(500),
+	in descripcion VARCHAR(500),
+	in fechaDia INT,
+	in fechaMes INT,
+	in fechaAno INT,
+	in Bimestre INT,
+	in idDependencia INT,
+	in idfotosEvidencia INT,
+	in idplanDesarrollo INT
+)
+BEGIN
+	insert into actividad values (default, nombre_Actividad, descripcion, fechaDia, fechaMes, fechaAno,
+    Bimestre, idDependencia, idfotosEvidencia, idplanDesarrollo);
+END
+//
+DELIMITER ;
 
+DELIMITER //
+#Procedimiento almacenado para insertar Usuarios
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_Insertar_Usuarios`(
+  in correoElectronico VARCHAR(45),
+  in contrasena VARCHAR(200),
+  in Nombre VARCHAR(45),
+  in apellidoPaterno VARCHAR(45),
+  in apellidoMaterno VARCHAR(45),
+  in idDependencia INT,
+  in idRol INT
+)
+BEGIN
+	insert into usuarios values (default, correoElectronico, contrasena, Nombre,
+    apellidoPaterno, apellidoMaterno, idDependencia, idRol);
+END
+//
+DELIMITER ;
+
+DELIMITER //
+#Procedimiento almacenado para modificar actividades 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_Modificar_Actividades`(
+	in idActividad INT,
+	in nombre_Actividad VARCHAR(500),
+	in descripcion VARCHAR(500),
+	in fechaDia INT,
+	in fechaMes INT,
+	in fechaAno INT,
+	in Bimestre INT,
+	in idDependencia INT,
+	in idfotosEvidencia INT,
+	in idplanDesarrollo INT
+)
+BEGIN
+	 UPDATE actividad SET 
+    nombre_Actividad=nombre_Actividad,
+    descripcion=descripcion,
+    fechaDia=fechaDia,
+    fechaMes=fechaMes,
+    fechaAno=fechaAno,
+    Bimestre=Bimestre,
+    idDependencia=idDependencia,
+    idfotosEvidencia=idfotosEvidencia,
+    idplanDesarrollo=idplanDesarrollo
+    WHERE idActividad = idActividad;
+END
+//
+DELIMITER ;
