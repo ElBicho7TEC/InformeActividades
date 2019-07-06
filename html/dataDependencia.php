@@ -1,8 +1,9 @@
+<?php include 'getInfo.php' ?>
 <?php include 'header.php' ?>
 <?php if(isset($_GET["idDependencia"]))
  {//Si se envia ID, cambiar por POST
     $id=$_GET["idDependencia"];
-    include "Conexion.php";
+    include "conexion.php";
     $cadena='SELECT *FROM dependencia where idDependencia= :id';
     $gsent = $conn->prepare($cadena);
     $gsent->bindParam(':id', $id, PDO::PARAM_INT);
@@ -14,9 +15,9 @@
     $numero=$resultado['numero'];
     $codigoPostal=$resultado['codigoPostal'];
     $entreCalles=$resultado['entreCalles'];
-    $funcion="Modificar"; 
- } 
-else 
+    $funcion="Modificar";
+ }
+else
  {//Si no tiene ID
     $id="";
     $nombreDeependencia="";
@@ -42,14 +43,14 @@ else
               <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--elementos de la navegacion--->
                   <ul class="navbar-nav mr-auto"> <!--ajuste automatico--->
                      <li class="nav-item active"><!--activacion de los menus del colapso--->
-                        <a class="nav-link" href="IndexAdministrador.php">Inicio<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="indexAdministrador.php">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Usuarios
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="Registro.php">Agregar Nuevo Usuario</a>
+                            <a class="dropdown-item" href="registro.php">Agregar Nuevo Usuario</a>
                             <a class="dropdown-item" href="#">Modificar Usuarios</a>
                         </div>
                     </li>
