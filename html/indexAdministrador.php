@@ -10,7 +10,7 @@ if (!$_GET || $_GET['pagina']<1)
 <div class="container"> <!--Contenedor indica que lo que este dentro sera centrado--->
   <div class="row justify-content-center text-center text-md-left" > <!--Contenedor de boostrap que indica las columnas que contendra--->
     <div class="col-12 " ><!--Contenedor de boostrap de todo el ancho de la pagina--->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:#616A6B !important; "> <!--Comienzo menu de navegación dark--->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" > <!--Comienzo menu de navegación dark--->
         <a class="navbar-brand" href="#"> <!--Brand Primer menu--->
           Perfil
         </a>
