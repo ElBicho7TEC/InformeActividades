@@ -76,11 +76,13 @@
 					  </div>
 					  <div class="form-group text-center">
 					       <span>Rol:</span>
-						   <input type="text"  id="Rol" name="Rol" required="">
+						   <select  id="Rol" name="Rol" required="">
+						   	
+						   </select>
 					  </div>
 					  <div class="form-group text-center">
 				           <span>Dependencia:</span>
-						   <input type="text"  id="Dependencia" name="Rol" required="">
+						   <select  id="Dependencia" name="Rol" required=""></select>
                       </div>
 				      <div class="form-group text-center">
 						   <input type="submit" class="btn btn-info" value="Registrarse" id="Registro"  name="Registro" style="margin: 25px;" required="">
