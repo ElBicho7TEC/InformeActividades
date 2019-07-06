@@ -8,7 +8,7 @@ $cp=$_POST["cp"];
 $referencias=$_POST["referencias"];
 
 
- include 'Conexion.php';
+ include 'conexion.php';
 
 if($id==""){
 

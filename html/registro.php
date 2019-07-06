@@ -19,7 +19,7 @@
                             Usuarios
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                               <a class="dropdown-item" href="Registro.php">Agregar Nuevo Usuario</a>
+                               <a class="dropdown-item" href="registro.php">Agregar Nuevo Usuario</a>
                                <a class="dropdown-item" href="#">Modificar Usuarios</a>
                             </div>
                             </li>
@@ -95,11 +95,11 @@ $id=1;
 $Nombre=$_POST["Nombre"];
 $ApellidoP=$_POST["ApellidoP"];     $ApellidoM=$_POST["ApellidoM"];
 $Correo=$_POST["Correo"];  $Contra=$_POST["Contrasena"];
-include("Codificacion.php"); // se incluye el archivo codificacion 
+include("codificacion.php"); // se incluye el archivo codificacion
 $ContraEncriptada=codificar($Contra);// mandar a llamar la funcion para encriptar la contraseña
 $Dependencia=1;
 $Rol=1;
-include 'Conexion.php';
+include 'conexion.php';
 $stmt=$conn->prepare("call sp_Insertar_Usuarios(?,?,?,?,?,?,?)");
 $stmt->bindParam(1,$Correo, PDO::PARAM_STR);
 $stmt->bindParam(2,$ContraEncriptada, PDO::PARAM_STR); //se manda como parametro la contraseña encriptada 

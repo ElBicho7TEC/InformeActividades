@@ -2,7 +2,7 @@
 <?php if(isset($_GET["idDependencia"]))
  {//Si se envia ID, cambiar por POST
     $id=$_GET["idDependencia"];
-    include "Conexion.php";
+    include "conexion.php";
     $cadena='SELECT *FROM dependencia where idDependencia= :id';
     $gsent = $conn->prepare($cadena);
     $gsent->bindParam(':id', $id, PDO::PARAM_INT);
@@ -49,7 +49,7 @@ else
                         Usuarios
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="Registro.php">Agregar Nuevo Usuario</a>
+                            <a class="dropdown-item" href="registro.php">Agregar Nuevo Usuario</a>
                             <a class="dropdown-item" href="#">Modificar Usuarios</a>
                         </div>
                     </li>

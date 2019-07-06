@@ -13,7 +13,7 @@ if($totalUsuarios>0){
 		$idDependencia=$User['idDependencia'];
 		$idRol=$User['idRol'];
 	}
-	include("Decodificacion.php"); // se incluye el archivo de desencriptacion 
+	include("decodificacion.php"); // se incluye el archivo de desencriptacion
     $Contradesencriptada=decodificar($contraseña); //se ejecuta la funcion de desencriptar
 	  if($pass==$Contradesencriptada){//compara la contraseña ingresada con aquella que obtuvimos de la BD, si entra, asigna las cookies del usuario
 	  	$deleteOldToken = $conn->prepare('DELETE FROM `gestion_plan_desarrollo`.`tokensesion` WHERE idUsuario = :idUsuario;');  //se prepara delete del token previo del usuario

@@ -24,7 +24,7 @@ if (!$_GET || $_GET['pagina']<1)
                              Usuarios
                              </a>
                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                             <a class="dropdown-item" href="Registro.php">Agregar Nuevo Usuario</a>
+                             <a class="dropdown-item" href="registro.php">Agregar Nuevo Usuario</a>
                              <a class="dropdown-item" href="#">Modificar Usuarios</a>
                              </li>
                               <li class="nav-item dropdown">
@@ -52,7 +52,7 @@ if (!$_GET || $_GET['pagina']<1)
                 </nav> <!--Fin  menu de navegación dark--->
   	        </div>
   	        <?php
-                include 'Conexion.php'; //se incluye la conexión
+                include 'conexion.php'; //se incluye la conexión
                 error_reporting(E_ALL^E_NOTICE);
                 if ($_POST['Bdependencia']!="") {
                 $BusquedaDependencia=$_POST['Bdependencia'];	

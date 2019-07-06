@@ -2,7 +2,7 @@
 $id=$_POST["id"];
 $nombreRol=$_POST["nombreRol"];
 
- include 'Conexion.php';
+ include 'conexion.php';
 if($id==""){
 
 $stmt = $conn->prepare("CALL sp_insertarRoles(?)");

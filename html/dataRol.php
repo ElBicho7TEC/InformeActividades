@@ -1,7 +1,7 @@
 <?php include 'header.php' ?>
 <?php if(isset($_GET["idRol"])) {//Si se envia ID, cambiar por POST
   $id=$_GET["idRol"];
-  include "Conexion.php";
+  include "conexion.php";
 $cadena='SELECT *
     FROM rol
     where idRol= :id';
@@ -37,7 +37,7 @@ $funcion="Insertar";
                     Usuarios
                     </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <a class="dropdown-item" href="Registro.php">Agregar Nuevo Usuario</a>
+                     <a class="dropdown-item" href="registro.php">Agregar Nuevo Usuario</a>
                      <a class="dropdown-item" href="#">Modificar Usuarios</a>
                   </div>
                  </li>
