@@ -1,7 +1,7 @@
 <?php include 'header.php';
 if (!$_GET || $_GET['pagina']<1) 
 {
-   header('Location:IndexAdministrador.php?pagina=1'); /// este es un comentario
+   header('Location:indexAdministrador.php?pagina=1'); /// este es un comentario
 }
 ?>
 <div class="container"> <!--Contenedor indica que lo que este dentro sera centrado--->
@@ -17,7 +17,7 @@ if (!$_GET || $_GET['pagina']<1)
                        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--elementos de la navegacion--->
                            <ul class="navbar-nav mr-auto"> <!--ajuste automatico--->
                              <li class="nav-item active"><!--activacion de los menus del colapso--->
-                              <a class="nav-link" href="IndexAdministrador.php">Inicio<span class="sr-only">(current)</span></a>
+                              <a class="nav-link" href="indexAdministrador.php">Inicio<span class="sr-only">(current)</span></a>
                              </li>
                              <li class="nav-item dropdown">
                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -122,17 +122,17 @@ if (!$_GET || $_GET['pagina']<1)
        	       <nav aria-label="...">
                    <ul class="pagination">
                       <li class="page-item <?php echo $_GET['pagina']<=1 ? 'disabled':'' ?>">
-                      <a class="page-link" href="IndexAdministrador.php?pagina=<?php echo $_GET['pagina']-1 ?>">Anterior</a>
+                      <a class="page-link" href="indexAdministrador.php?pagina=<?php echo $_GET['pagina']-1 ?>">Anterior</a>
                       </li>
                       <?php for($i=0;$i<$paginas;$i++):?>
                       <li class="page-item <?php echo $_GET['pagina']==$i+1 ? 'active':'' ?>">
-                      	<a class="page-link" href="IndexAdministrador.php?pagina=<?php echo $i+1; ?>">
+                      	<a class="page-link" href="indexAdministrador.php?pagina=<?php echo $i+1; ?>">
                         <?php echo $i+1; ?>
                       	</a>
                       </li>
                       <?php endfor ?>
                       <li class="page-item <?php echo $_GET['pagina']>=$paginas ? 'disabled':'' ?>">
-                      <a class="page-link" href="IndexAdministrador.php?pagina=<?php echo $_GET['pagina']+1 ?>">Siguiente</a>
+                      <a class="page-link" href="indexAdministrador.php?pagina=<?php echo $_GET['pagina']+1 ?>">Siguiente</a>
                       </li>
                     </ul>
                </nav>

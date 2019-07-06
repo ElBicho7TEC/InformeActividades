@@ -30,7 +30,7 @@ $funcion="Insertar";
           <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--elementos de la navegacion--->
               <ul class="navbar-nav mr-auto"> <!--ajuste automatico--->
                  <li class="nav-item active"><!--activacion de los menus del colapso--->
-                    <a class="nav-link" href="IndexAdministrador.php">Inicio<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="indexAdministrador.php">Inicio<span class="sr-only">(current)</span></a>
                  </li>
                  <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
