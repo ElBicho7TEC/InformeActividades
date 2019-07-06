@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'header.php';
 
 if (!$_GET || $_GET['pagina']<1) 
@@ -10,17 +10,22 @@ if (!$_GET || $_GET['pagina']<1)
 <div class="container"> <!--Contenedor indica que lo que este dentro sera centrado--->
   <div class="row justify-content-center text-center text-md-left" > <!--Contenedor de boostrap que indica las columnas que contendra--->
     <div class="col-12 " ><!--Contenedor de boostrap de todo el ancho de la pagina--->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--Comienzo menu de navegación dark--->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" > <!--Comienzo menu de navegación dark--->
         <a class="navbar-brand" href="#"> <!--Brand Primer menu--->
           Perfil
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!--boton decolapso--->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" > <!--boton decolapso--->
           <span class="navbar-toggler-icon"></span> <!--icono del boton de colapso--->
         </button>        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--elementos de la navegacion--->
-          <ul class="navbar-nav mr-auto"> <!--ajuste automatico--->                             
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" > <!--elementos de la navegacion--->
+          <ul class="navbar-nav mr-auto" > <!--ajuste automatico--->                             
             <li class="nav-item active"><!--activacion de los menus del colapso--->
-              <a class="nav-link" href="indexAdministrador.php">Inicio<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="indexAdministrador.php">
+                Inicio
+                <span class="sr-only">
+                  (current)
+                </span>
+              </a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,7 +69,7 @@ if (!$_GET || $_GET['pagina']<1)
           </ul>
           <form class="form-inline my-2 my-lg-0" method="POST">
             <input class="form-control mr-sm-2" type="search"  aria-label="Search" name="Bdependencia" id="Bdependencia">
-            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" id="Buscar">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" id="Buscar" style="border-color: #5DADE2 !important; color:white !important;">
                 Buscar
             </button>
           </form>
