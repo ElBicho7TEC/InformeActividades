@@ -91,6 +91,7 @@
 		</div>
 <?php 
 include 'footer.php'; 
+if (isset($_POST["Nombre"])) {
 $id=1;
 $Nombre=$_POST["Nombre"];
 $ApellidoP=$_POST["ApellidoP"];     $ApellidoM=$_POST["ApellidoM"];
@@ -108,5 +109,5 @@ $stmt->bindParam(4,$ApellidoP, PDO::PARAM_STR);
 $stmt->bindParam(5,$ApellidoM, PDO::PARAM_STR);
 $stmt->bindParam(6,$Dependencia, PDO::PARAM_STR);
 $stmt->bindParam(7,$Rol, PDO::PARAM_STR);
-$stmt->execute();
+$stmt->execute(); }
 ?>
