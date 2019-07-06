@@ -1,4 +1,6 @@
+<?php include 'getInfo.php' ?>
 <?php include 'header.php' ?>
+
 <?php if(isset($_GET["idRol"])) {//Si se envia ID, cambiar por POST
   $id=$_GET["idRol"];
   include "conexion.php";
@@ -63,7 +65,7 @@ $funcion="Insertar";
             </div>
       </nav> <!--Fin  menu de navegación dark--->
     </div>
-    <div class="col-12 col-md-4 mt-4 mt-md-0">  
+    <div class="col-12 col-md-4 mt-4 mt-md-0">
       <form class="Myformulario" action="dataRolDB.php" method="post">
            <div class="form-group">
                <label>Tipo de Rol</label>

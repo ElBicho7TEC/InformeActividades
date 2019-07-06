@@ -1,3 +1,4 @@
+<?php include 'getInfo.php' ?>
 <?php include 'header.php' ?>
 <?php if(isset($_GET["idDependencia"]))
  {//Si se envia ID, cambiar por POST
@@ -14,9 +15,9 @@
     $numero=$resultado['numero'];
     $codigoPostal=$resultado['codigoPostal'];
     $entreCalles=$resultado['entreCalles'];
-    $funcion="Modificar"; 
- } 
-else 
+    $funcion="Modificar";
+ }
+else
  {//Si no tiene ID
     $id="";
     $nombreDeependencia="";
