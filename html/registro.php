@@ -83,7 +83,7 @@
 						   	include 'Conexion.php';
 						   	$datos = $conn->query('SELECT * FROM rol');
 						   	while ($valores=$datos->fetch()) {
-						   		echo "'<option value= $valores[idRol]> $valores[tipoRol] </option>'";
+						   		echo "'<option value= $valores[idrol]> $valores[tiporol] </option>'";
 						   	}
                            ?>
 						   </select>
@@ -96,7 +96,7 @@
 						   	include 'Conexion.php';
 						   	$datos = $conn->query('SELECT * FROM dependencia');
 						   	while ($valores=$datos->fetch()) {
-						   		echo "'<option value= $valores[idDependencia]> $valores[nombreDeependencia] </option>'";
+						   		echo "'<option value= $valores[iddependencia]> $valores[nombredependencia] </option>'";
 						   	}
                            ?>
 
