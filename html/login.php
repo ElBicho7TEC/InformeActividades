@@ -1,4 +1,13 @@
-<?php include 'header.php' ?>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<div>
+ <?php include 'header.php' ?>
+</div>
+
+
 <?php
 if (isset($_GET["error"])){
     $idError=$_GET["error"];
@@ -24,10 +33,10 @@ if (isset($_GET["error"])){
 
     <?php }
 } ?>
-<div class="container">
+<div class="container" id="maindiv">
   <div class="row justify-content-center text-center text-md-left">
   <div class="col-12 col-md-4 mt-4 mt-md-0">
-      <form class="myformulario" action="verificarLogin.php" method="post" enctype="multipart/form-data">
+      <form class="Myformulario" action="verificarLogin.php" method="post" enctype="multipart/form-data">
           <div class="col-12 form-group">
               <label>Correo</label>
               <input   type="text" id="correo" name="correo" value="" maxlength="73" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required="" >
