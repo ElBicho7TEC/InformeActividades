@@ -72,7 +72,7 @@ CREATE TABLE fotosevidencia(
 -- -----------------------------------------------------
 CREATE TABLE actividad(
   idactividad INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  nombre_actividad VARCHAR(500) NOT NULL,
+  nombreactividad VARCHAR(500) NOT NULL,
   descripcion VARCHAR(500) NOT NULL,
   fechadia INT NOT NULL,
   fechames INT NOT NULL,
