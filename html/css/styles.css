@@ -1,18 +1,23 @@
 /*** Add your styles here **/
-#ImgLogin
-{
-	width: 16%;
-	vertical-align: top;
-}
 .Myformulario span {
+	width: 200px;
+	display: inline-block;
+}
+.Myformulario label {
+	width: 200px;
+	display: inline-block;
+	color: #000000;
+
+}
+
+.formularioLogin span {
 	width: 200px;
 	display: inline-block;
 	color: #fff;
 }
-.Myformulario label {
+.formularioLogin label {
 	width: 100px;
 	display: inline-block;
 	color: #fff;
 }
-
 
