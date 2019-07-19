@@ -1,4 +1,4 @@
-	<?php include 'header.php' ?>
+<?php include 'header.php' ?>
 		<div class="container"> 
 			<div class="row justify-content-center text-center text-md-left">
 				<div class="col-12 " >
@@ -84,18 +84,18 @@
 						   	while ($valores=$datos->fetch()) {
 						   		echo "'<option value= $valores[idrol]> $valores[tiporol] </option>'";
 						   	}
-                           ?>	
+                           ?>
 						   </select>
 					  </div>
 					  <div class="form-group text-center">
 				           <span>Dependencia:</span>
 						   <select  id="Dependencia" name="Rol" required="">
-						   			<p></p>
+						   	<p></p>
 						   	<?php  
 						   	include 'Conexion.php';
 						   	$datos = $conn->query('SELECT * FROM dependencia');
 						   	while ($valores=$datos->fetch()) {
-						   		echo "'<option value= $valores[iddependencia]> $valores[nombreDependencia] </option>'";
+						   		echo "'<option value= $valores[iddependencia]> $valores[nombredependencia] </option>'";
 						   	}
                            ?>
 						   </select>
