@@ -1,5 +1,6 @@
 	<?php include 'header.php' ?>
-		<div class="container"> 
+
+	<div class="container"> 
 			<div class="row justify-content-center text-center text-md-left">
 				<div class="col-12 " >
 				    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--Comienzo menu de navegación dark--->
@@ -12,14 +13,14 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--elementos de la navegacion--->
                         <ul class="navbar-nav mr-auto"> <!--ajuste automatico--->
                             <li class="nav-item active"><!--activacion de los menus del colapso--->
-                            <a class="nav-link" href="indexAdministrador.php">Inicio<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="IndexAdministrador.php">Inicio<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Usuarios
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                               <a class="dropdown-item" href="registro.php">Agregar Nuevo Usuario</a>
+                               <a class="dropdown-item" href="Registro.php">Agregar Nuevo Usuario</a>
                                <a class="dropdown-item" href="#">Modificar Usuarios</a>
                             </div>
                             </li>
@@ -77,12 +78,29 @@
 					  <div class="form-group text-center">
 					       <span>Rol:</span>
 						   <select  id="Rol" name="Rol" required="">
-						   	
+						   	<p></p>
+						   	<?php  
+						   	include 'Conexion.php';
+						   	$datos = $conn->query('SELECT * FROM rol');
+						   	while ($valores=$datos->fetch()) {
+						   		echo "'<option value= $valores[idRol]> $valores[tipoRol] </option>'";
+						   	}
+                           ?>
 						   </select>
 					  </div>
 					  <div class="form-group text-center">
 				           <span>Dependencia:</span>
-						   <select  id="Dependencia" name="Rol" required=""></select>
+						   <select id="Dependencia" name="Dependencia" required="">
+						   		<p></p>
+						   	<?php  
+						   	include 'Conexion.php';
+						   	$datos = $conn->query('SELECT * FROM dependencia');
+						   	while ($valores=$datos->fetch()) {
+						   		echo "'<option value= $valores[idDependencia]> $valores[nombreDeependencia] </option>'";
+						   	}
+                           ?>
+
+						   </select>
                       </div>
 				      <div class="form-group text-center">
 						   <input type="submit" class="btn btn-info" value="Registrarse" id="Registro"  name="Registro" style="margin: 25px;" required="">
@@ -91,18 +109,18 @@
     			 </div>
     	    </div>
 		</div>
-<?php 
+	<?php 
 include 'footer.php'; 
-if (isset($_POST["Nombre"])) {
+if(isset($_POST["Nombre"])) {
 $id=1;
 $Nombre=$_POST["Nombre"];
 $ApellidoP=$_POST["ApellidoP"];     $ApellidoM=$_POST["ApellidoM"];
 $Correo=$_POST["Correo"];  $Contra=$_POST["Contrasena"];
-include("codificacion.php"); // se incluye el archivo codificacion
+include("Codificacion.php"); // se incluye el archivo codificacion 
 $ContraEncriptada=codificar($Contra);// mandar a llamar la funcion para encriptar la contraseña
 $Dependencia=1;
 $Rol=1;
-include 'conexion.php';
+include 'Conexion.php';
 $stmt=$conn->prepare("call sp_Insertar_Usuarios(?,?,?,?,?,?,?)");
 $stmt->bindParam(1,$Correo, PDO::PARAM_STR);
 $stmt->bindParam(2,$ContraEncriptada, PDO::PARAM_STR); //se manda como parametro la contraseña encriptada 
@@ -112,4 +130,6 @@ $stmt->bindParam(5,$ApellidoM, PDO::PARAM_STR);
 $stmt->bindParam(6,$Dependencia, PDO::PARAM_STR);
 $stmt->bindParam(7,$Rol, PDO::PARAM_STR);
 $stmt->execute(); }
+
 ?>
+	
