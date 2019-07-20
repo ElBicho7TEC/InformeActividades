@@ -362,7 +362,7 @@
 
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-172">
                         <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="...">
-                          ???
+                          Usuarios
                           <strong class="caret">
                             
                           </strong>
@@ -371,7 +371,13 @@
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
                             <a href="...">
-                              ???
+                              Agregar Nuevo Usuario
+                            </a>
+                          </li>
+
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
+                            <a href="...">
+                              Modificar Usuario
                             </a>
                           </li>
                         </ul>
@@ -379,13 +385,30 @@
 
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327">
                         <a href="...">
-                          ???
+                          Roles
+                          <strong class="caret">
+                            
+                          </strong>
                         </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
+                            <a href="...">
+                              Agregar Nuevo Rol
+                            </a>
+                          </li>
+
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
+                            <a href="...">
+                              Modificar Rol
+                            </a>
+                          </li>
+                        </ul>
                       </li>
 
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-383">
                         <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="...">
-                          ???
+                          Dependencias
                           <strong class="caret">
                             
                           </strong>
