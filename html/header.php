@@ -309,202 +309,286 @@
     <div id="tc-page-wrap" class="">
       
       <header class="tc-header clearfix row-fluid tc-tagline-off tc-title-logo-on  tc-shrink-on tc-menu-on logo-left tc-second-menu-in-sn-before-when-mobile" role="banner">
+        
         <div class="brand span3 pull-left">
-            <a class="site-logo" href="http://ahuacatlanavanza.gob.mx/" title="XLI Ayuntamiento de Ahuacatlán Nayarit  | Gobierno que Construye, Municipio que Avanza "><img src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2017/09/logo-1.png" alt="Volver a la página principal" width="272" height="90" style="max-width: 250px; max-height: 100px; width: 272px; height: 82.7206px;" data-no-retina="" class=" attachment-311">
-            </a>        
+          <a class="site-logo" href="http://ahuacatlanavanza.gob.mx/" title="XLI Ayuntamiento de Ahuacatlán Nayarit  | Gobierno que Construye, Municipio que Avanza ">
+            <img src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2017/09/logo-1.png" alt="Volver a la página principal" width="272" height="90" style="max-width:250px;max-height:100px" data-no-retina class=" attachment-311"/>
+          </a>        
         </div> <!-- brand span3 -->
 
-        <div class="navbar-wrapper clearfix span9 tc-submenu-move tc-open-on-click pull-menu-left tc-submenu-fade">
-            <div class="navbar resp">
-                <div class="navbar-inner" role="navigation">
-                  <div class="row-fluid">
-                      <div class="social-block span5">
-                        <div class="social-links">
-                          <a rel="nofollow" class="social-icon icon-facebook" title="Síguenos Facebook" aria-label="Síguenos Facebook" href="https://www.facebook.com/XLIAyuntamientoAhuacatlan/" target="_blank" style="color:#f51818;font-size:12px">
-                            <i class="fa fa-facebook">
-                              
-                            </i>
-                          </a>
-
-                          <a rel="nofollow" class="social-icon icon-twitter" title="Síguenos Twitter" aria-label="Síguenos Twitter" href="javascript:void(0)" target="_blank" style="color:#f51818;font-size:12px">
-                            <i class="fa fa-twitter">
-
-                            </i>
-                          </a>
-
-                          <a rel="nofollow" class="social-icon icon-youtube" title="Síguenos Youtube" aria-label="Síguenos Youtube" href="javascript:void(0)" target="_blank" style="color:#f51818;font-size:12px">
-                            <i class="fa fa-youtube">
-                              
-                            </i>
-                          </a>
-
-                          <a rel="nofollow" class="social-icon icon-instagram" title="Síguenos Instagram" aria-label="Síguenos Instagram" href="javascript:void(0)" target="_blank" style="color:#f51818;font-size:12px">
-                            <i class="fa fa-instagram">
-                              
-                            </i>
-                          </a>
-
-                          <a rel="nofollow" class="social-icon icon-phone" title="(324)2411254" aria-label="(324)2411254" href="tel:324-241-1254" target="_blank" style="color:#f51818;font-size:12px">
-                            <i class="fa fa-phone">
-                              
-                            </i>
-                          </a>
-
-                          <a rel="nofollow" class="social-icon icon-mail-o" title="Email" aria-label="Email" href="mailto:ahuacatlanavanza@gmail.com" target="_blank" style="color:#f51818;font-size:12px">
-                            <i class="fa fa-envelope-o">
-                              
-                            </i>
-                          </a>
-                        </div>
-                      </div>
-
-                      <div class="nav-collapse collapse">
-                        <div class="menu-menu-principal-container">
-                          <ul id="menu-menu-principal-2" class="nav">
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
-                              <a href="http://ahuacatlanavanza.gob.mx/inicio/">
-                                Inicio
-                              </a>
-                            </li>
-
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-172">
-                      <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://ahuacatlanavanza.gob.mx/cabildo/">
-                        Cabildo 
-                        <strong class="caret">
-                          
-                        </strong>
-                      </a>
-                      
-                      <ul class="dropdown-menu" style="">
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
-                          <a href="http://ahuacatlanavanza.gob.mx/gacetas-municipales/">
-                            Gaceta Oficial
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327">
-                      <a href="http://ahuacatlanavanza.gob.mx/te-escuchamos/">
-                        Queremos Escucharte
-                      </a>
-                    </li>
-
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-383">
-                      <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://ahuacatlanavanza.gob.mx/comunicacion-social/">
-                        Comunicación Social 
-                        <strong class="caret">
-                          
-                        </strong>
-                      </a>
-
-                      <ul class="dropdown-menu" style="">
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
-                          <a href="http://ahuacatlanavanza.gob.mx/licitaciones-publicas/">
-                            Licitaciones Públicas
-                          </a>
-                        </li>
+        <div class="navbar-wrapper clearfix span9 tc-submenu-fade tc-submenu-move tc-open-on-click pull-menu-left">
+          <div class="navbar resp">
+            <div class="navbar-inner" role="navigation">
+              <div class="row-fluid">
+                <div class="social-block span5">
+                  <div class="social-links">
+                    <a rel="nofollow" class="social-icon icon-facebook"  title="Síguenos Facebook" aria-label="Síguenos Facebook" href="https://www.facebook.com/XLIAyuntamientoAhuacatlan/"  target="_blank"  style="color:#f51818;font-size:12px">
+                      <i class="fa fa-facebook">
                         
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2793">
-                          <a href="http://ahuacatlanavanza.gob.mx/quejas-y-denuncias/">
-                            Quejas y Denuncias
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384">
-                      <a href="http://ahuacatlanavanza.gob.mx/tramites/">
-                        Trámites
-                      </a>
-                    </li>
-                    
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-385">
-                      <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://ahuacatlanavanza.gob.mx/transparencia/">
-                        Transparencia 
-                        <strong class="caret">
-                          
-                        </strong>
-                      </a>
-                      
-                      <ul class="dropdown-menu" style="">
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown-submenu menu-item-1005">
-                          <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://ahuacatlanavanza.gob.mx/ayuntamientoitai/">
-                            Ayuntamiento
-                          </a>
-                          
-                          <ul class="dropdown-menu" style="">
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1002">
-                              <a href="http://ahuacatlanavanza.gob.mx/mision-y-vision-transparencia/">
-                                Misión y Visión Transparencia
-                              </a>
-                            </li>
-                            
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001">
-                              <a href="http://ahuacatlanavanza.gob.mx/articulo-10-historico/">
-                                Articulo 10 (Historico)
-                              </a>
-                            </li>
-                            
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395">
-                              <a href="http://ahuacatlanavanza.gob.mx/articulo33/">
-                                Articulo 33
-                              </a>
-                            </li>
-                            
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394">
-                              <a href="http://ahuacatlanavanza.gob.mx/articulo39/">
-                                Articulo 39
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
+                      </i>
+                    </a>
+
+                    <a rel="nofollow" class="social-icon icon-twitter"  title="Síguenos Twitter" aria-label="Síguenos Twitter" href="javascript:void(0)"  target="_blank"  style="color:#f51818;font-size:12px">
+                      <i class="fa fa-twitter">
                         
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown-submenu menu-item-1009">
-                          <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://ahuacatlanavanza.gob.mx/organismos-descentralizados/">
-                            Organismos Descentralizados
-                          </a>
-                          
-                          <ul class="dropdown-menu" style="">
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397">
-                              <a href="http://ahuacatlanavanza.gob.mx/dif/">
-                                DIF
-                              </a>
-                            </li>
-        
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396">
-                              <a href="http://ahuacatlanavanza.gob.mx/ooapa/">
-                                OOAPA
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                      </i>
+                    </a>
+
+                    <a rel="nofollow" class="social-icon icon-youtube"  title="Síguenos Youtube" aria-label="Síguenos Youtube" href="javascript:void(0)"  target="_blank"  style="color:#f51818;font-size:12px">
+                      <i class="fa fa-youtube">
+                        
+                      </i>
+                    </a>
+
+                    <a rel="nofollow" class="social-icon icon-instagram"  title="Síguenos Instagram" aria-label="Síguenos Instagram" href="javascript:void(0)"  target="_blank"  style="color:#f51818;font-size:12px">
+                      <i class="fa fa-instagram">
+                        
+                      </i>
+                    </a>
+
+                    <a rel="nofollow" class="social-icon icon-phone"  title="(324)2411254" aria-label="(324)2411254" href="tel:324-241-1254"  target="_blank"  style="color:#f51818;font-size:12px">
+                      <i class="fa fa-phone">
+                        
+                      </i>
+                    </a>
+
+                    <a rel="nofollow" class="social-icon icon-mail-o"  title="Email" aria-label="Email" href="mailto:ahuacatlanavanza@gmail.com"  target="_blank"  style="color:#f51818;font-size:12px">
+                      <i class="fa fa-envelope-o">
+                        
+                      </i>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="btn-toggle-nav pull-right">
-                <button type="button" class="btn menu-btn" data-toggle="collapse" data-target=".nav-collapse" title="Abrir el menú" aria-label="Abrir el menú">
-                  <span class="icon-bar">
-                    
-                  </span>
+                <div class="nav-collapse collapse">
+                  <div class="menu-menu-principal-container">
+                    <ul id="menu-menu-principal-2" class="nav">
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
+                        <a href="http://ahuacatlanavanza.gob.mx/inicio/">
+                          Inicio
+                        </a>
+                      </li>
 
-                  <span class="icon-bar">
-                    
-                  </span>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-172">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://ahuacatlanavanza.gob.mx/cabildo/">
+                          Cabildo 
+                          <strong class="caret">
+                            
+                          </strong>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
+                            <a href="http://ahuacatlanavanza.gob.mx/gacetas-municipales/">
+                              Gaceta Oficial
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
 
-                  <span class="icon-bar">
-                    
-                  </span> 
-                </button>
-              </div>                
-            </div><!-- /.row-fluid -->
-                </div><!-- /.navbar-inner -->
-            </div><!-- /.navbar resp -->
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327">
+                        <a href="http://ahuacatlanavanza.gob.mx/te-escuchamos/">
+                          Queremos Escucharte
+                        </a>
+                      </li>
+
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-383">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://ahuacatlanavanza.gob.mx/comunicacion-social/">
+                          Comunicación Social 
+                          <strong class="caret">
+                            
+                          </strong>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
+                            <a href="http://ahuacatlanavanza.gob.mx/licitaciones-publicas/">
+                              Licitaciones Públicas
+                            </a>
+                          </li>
+                           
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2793">
+                            <a href="http://ahuacatlanavanza.gob.mx/quejas-y-denuncias/">
+                              Quejas y Denuncias
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384">
+                        <a href="http://ahuacatlanavanza.gob.mx/tramites/">
+                          Trámites
+                        </a>
+                      </li>
+                      
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-385">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://ahuacatlanavanza.gob.mx/transparencia/">
+                          Transparencia 
+                          <strong class="caret">
+                            
+                          </strong>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown-submenu menu-item-1005">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://ahuacatlanavanza.gob.mx/ayuntamientoitai/">
+                              Ayuntamiento
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1002">
+                                <a href="http://ahuacatlanavanza.gob.mx/mision-y-vision-transparencia/">
+                                  Misión y Visión Transparencia
+                                </a>
+                              </li>
+                              
+                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001">
+                                <a href="http://ahuacatlanavanza.gob.mx/articulo-10-historico/">
+                                  Articulo 10 (Historico)
+                                </a>
+                              </li>
+                              
+                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395">
+                                <a href="http://ahuacatlanavanza.gob.mx/articulo33/">
+                                  Articulo 33
+                                </a>
+                              </li>
+                              
+                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394">
+                                <a href="http://ahuacatlanavanza.gob.mx/articulo39/">
+                                  Articulo 39
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown-submenu menu-item-1009">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://ahuacatlanavanza.gob.mx/organismos-descentralizados/">
+                              Organismos Descentralizados
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397">
+                                <a href="http://ahuacatlanavanza.gob.mx/dif/">
+                                  DIF
+                                </a>
+                              </li>
+                              
+                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396">
+                                <a href="http://ahuacatlanavanza.gob.mx/ooapa/">
+                                  OOAPA
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="btn-toggle-nav pull-right">
+                  <button type="button" class="btn menu-btn" data-toggle="collapse" data-target=".nav-collapse" title="Abrir el menú" aria-label="Abrir el menú">
+                    <span class="icon-bar">
+                      
+                    </span>
+
+                    <span class="icon-bar">
+                      
+                    </span><span class="icon-bar">
+                      
+                    </span> 
+                  </button>
+                </div>                
+              </div><!-- /.row-fluid -->
+            </div><!-- /.navbar-inner -->
+          </div><!-- /.navbar resp -->
         </div><!-- /.navbar-wrapper -->
-      </header>    
+      </header>
+
+      <div id="tc-reset-margin-top" class="container-fluid" style="margin-top:103px">
+        
+      </div>    
+
+      <div id="customizr-slider-1" class="carousel customizr-slide sliderfinal parallax-wrapper">
+        <div id="tc-slider-loader-wrapper-1" class="tc-slider-loader-wrapper">
+          <div class="tc-img-gif-loader">
+            
+          </div>
+          
+          <div class="tc-css-loader tc-mr-loader">
+            <div>
+              
+            </div>
+
+            <div>
+              
+            </div>
+
+            <div>
+              
+            </div>
+          </div>      
+        </div>
+        
+        <div class="carousel-inner center-slides-enabled czr-parallax-slider" data-parallax-ratio="0.55">
+          <div class="czr-item active slide-2212">
+            <div class="carousel-image slider-full">
+              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/b07ef292-cb5a-46db-b19e-b925ec895693-1280x500.jpg" class="slide" alt="" />    
+            </div> <!-- .carousel-image -->
+          </div><!-- /.czr-item -->
+        
+          <div class="czr-item  slide-2213">
+            <div class="carousel-image slider-full">
+              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/342eb11a-5439-4d72-a3b3-265ec476405f-1280x500.jpg" class="slide" alt="" />    
+            </div> <!-- .carousel-image -->
+          </div><!-- /.czr-item -->
+        
+          <div class="czr-item  slide-2214">
+            <div class="carousel-image slider-full">
+              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/8076ba55-9188-4d7b-b391-af9ae1c67eee-1280x500.jpg" class="slide" alt="" />    
+            </div> <!-- .carousel-image -->
+          </div><!-- /.czr-item -->
+        
+          <div class="czr-item  slide-2215">
+            <div class="carousel-image slider-full">
+              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/bb78d872-d4df-4dc2-a495-8729bc178c0d-1280x500.jpg" class="slide" alt="" />    
+            </div> <!-- .carousel-image -->
+          </div><!-- /.czr-item -->
+        
+          <div class="czr-item  slide-2216">
+            <div class="carousel-image slider-full">
+              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/4951b831-8ac3-4e0d-8775-6685b68192ea-1280x500.jpg" class="slide" alt="" />    
+            </div> <!-- .carousel-image -->
+          </div><!-- /.czr-item -->
+        
+          <div class="czr-item  slide-359">
+            <div class="carousel-image slider-full">
+              <img width="1231" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2017/10/slider3.jpg" class="slide" alt="" />    
+            </div> <!-- .carousel-image -->
+          </div><!-- /.czr-item -->
+        </div><!-- /.carousel-inner -->
+
+        <div class="tc-slider-controls left">
+          <a class="tc-carousel-control" href="#customizr-slider-1" data-slide="prev">
+            &lsaquo;
+          </a>
+        </div>
+
+        <div class="tc-slider-controls right">
+          <a class="tc-carousel-control" href="#customizr-slider-1" data-slide="next">
+            &rsaquo;
+          </a>
+        </div>
+      </div><!-- /#customizr-slider -->
+
+      <div id="main-wrapper" class="container">
+        <div class="container marketing">
+          <div class="row widget-area" role="complementary">
+
+          </div>
+        </div>
+      </div>
     </div>    
   </body>
 </html>
