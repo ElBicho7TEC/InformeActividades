@@ -355,13 +355,13 @@
                   <div class="menu-menu-principal-container">
                     <ul id="menu-menu-principal-2" class="nav">
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
-                        <a href="http://ahuacatlanavanza.gob.mx/inicio/">
+                        <a href="indexAdministrador.php?pagina=1">
                           Inicio
                         </a>
                       </li>
 
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-172">
-                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="...">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
                           Usuarios
                           <strong class="caret">
                             
@@ -370,21 +370,21 @@
                         
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
-                            <a href="...">
+                            <a href="registro.php">
                               Agregar Nuevo Usuario
                             </a>
                           </li>
 
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
-                            <a href="...">
+                            <a href="#">
                               Modificar Usuario
                             </a>
                           </li>
                         </ul>
                       </li>
 
-                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327">
-                        <a href="...">
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-327">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
                           Roles
                           <strong class="caret">
                             
@@ -392,14 +392,14 @@
                         </a>
 
                         <ul class="dropdown-menu">
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
-                            <a href="...">
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2242">
+                            <a href="dataRol.php">
                               Agregar Nuevo Rol
                             </a>
                           </li>
 
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
-                            <a href="...">
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2242">
+                            <a href="#">
                               Modificar Rol
                             </a>
                           </li>
@@ -407,7 +407,7 @@
                       </li>
 
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-383">
-                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="...">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
                           Dependencias
                           <strong class="caret">
                             
@@ -416,20 +416,20 @@
                         
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
-                            <a href="...">
-                              ???
+                            <a href="dataDependencia.php">
+                              Agregar Nueva Dependencia 
                             </a>
                           </li>
                            
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2793">
-                            <a href="...">
-                              ???
+                            <a href="#">
+                              Modificar Dependencia
                             </a>
                           </li>
                         </ul>
                       </li>
 
-                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384">
+                      <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384">
                         <a href=".../">
                           ???
                         </a>
@@ -443,7 +443,7 @@
                           </strong>
                         </a>
                         
-                        <ul class="dropdown-menu">
+                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown-submenu menu-item-1005">
                             <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="...">
                               ???
@@ -495,8 +495,8 @@
                               </li>
                             </ul>
                           </li>
-                        </ul>
-                      </li>
+                        </ul> 
+                      </li> -->
                     </ul>
                   </div>
                 </div>
