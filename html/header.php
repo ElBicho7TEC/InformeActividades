@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es-ES">
   <head>
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="bootstrap-4.3.1-dist/js/bootstrap.js">   </script>
-      
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Dosis:400,800" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-	  <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="shortcut icon" href="logos/AhucatlanTransparente.png" type="image/png" /> <!--Se agrega el icono a la cabecera de la página desde la ubicación de la carpeta logos-->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="http://ahuacatlanavanza.gob.mx/xmlrpc.php" />
 
+           <!-- html5shiv for IE8 and less  -->
+            <!--[if lt IE 9]>
+              <script src="http://ahuacatlanavanza.gob.mx/wp-content/themes/customizr/inc/assets/js/html5.js"></script>
+            <![endif]-->
     <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);
 
     </script>
 
-    <title>
-      XLI Ayuntamiento de Ahuacatlán Nayarit  &#8211; Gobierno que Construye, Municipio que Avanza (Index Administrador)
-    </title>
-
+    <title>XLI Ayuntamiento de Ahuacatlán Nayarit  &#8211; Gobierno que Construye, Municipio que Avanza </title>
+    
     <link rel='dns-prefetch' href='//www.google.com' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
@@ -301,7 +293,6 @@
       ga('send', 'pageview');
     </script>
     <!-- END ExactMetrics Universal Analytics -->
-
   </head>
 
   <body class="home blog tc-fade-hover-links tc-no-sidebar tc-center-images skin-red tc-sticky-header sticky-disabled tc-transparent-on-scroll tc-regular-menu tc-post-list-context" itemscope itemtype="http://schema.org/WebPage">
