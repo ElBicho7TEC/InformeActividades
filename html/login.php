@@ -35,28 +35,25 @@ if (isset($_GET["error"])){
 } ?>
 <div class="container" id="maindiv">
   <div class="row justify-content-center text-center text-md-left">
-  <div class="col-12 col-md-4 mt-4 mt-md-0">
-      <form class="Myformulario" action="verificarLogin.php" method="post" enctype="multipart/form-data">
-          <div class="col-12 form-group">
-              <label>Correo</label>
-              <input   type="text" id="correo" name="correo" value="" maxlength="73" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required="" >
+	  <div class="col-12 col-md-4 mt-4 mt-md-0">
+	      <form class="Myformulario" action="verificarLogin.php" method="post" enctype="multipart/form-data">
+	          <div class="col-12 form-group">
+	              <label>Correo</label>
+	              <input   type="text" id="correo" name="correo" value="" maxlength="73" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required="" >
 
-          </div>
-          <div class="col-12   form-group">
-              <label>Password</label>
-              <input type="password" id="pass" name="pass" value="" maxlength="73" required="">
-          </div>
+	          </div>
+	          <div class="col-12   form-group">
+	              <label>Password</label>
+	              <input type="password" id="pass" name="pass" value="" maxlength="73" required="">
+	          </div>
 
-          <div class="col-12   form-group ">
-              <input type="submit"  id="entrar" name="entrar" value="Entrar">
+	          <div class="col-12   form-group ">
+	              <input type="submit"  id="entrar" name="entrar" value="Entrar">
 
-          </div>
-
-      </form>  </div>
-
-</div>
-
-
+	          </div>
+	     </form>  
+	  </div>
+	</div>
 </div>
 
 
