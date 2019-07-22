@@ -11,13 +11,13 @@ create procedure sp_modificarDependencias(
 )
 BEGIN
     UPDATE dependencia SET 
-    nombreDeependencia=var_nombreDeependencia,
+    nombredependencia=var_nombreDeependencia,
     calle=var_calle,
     colonia=var_colonia,
     numero=var_numero,
-    codigoPostal=var_codigoPostal,
-    entreCalles=var_entreCalles
-    WHERE idDependencia=var_idDependencia;
+    codigopostal=var_codigoPostal,
+    entrecalles=var_entreCalles
+    WHERE iddependencia=var_idDependencia;
 END;
 //
 DELIMITER ;
