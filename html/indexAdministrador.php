@@ -1,17 +1,12 @@
 <?php
 include 'header.php';
-
 if (!$_GET || $_GET['pagina']<1) 
 {
-  header('Location:indexAdministrador.php?pagina=1'); /// este es un comentario
+  $_GET['pagina']=1;
 }
 ?>
-
-
-
 <div class="container"> <!--Contenedor indica que lo que este dentro sera centrado--->
   <div class="row justify-content-center text-center text-md-left" > <!--Contenedor de boostrap que indica las columnas que contendra--->
-
   	<?php
     include 'conexion.php'; //se incluye la conexión
       error_reporting(E_ALL^E_NOTICE);
@@ -52,11 +47,11 @@ if (!$_GET || $_GET['pagina']<1)
     foreach ($ResultadoDependencias2 as $Datos) 
     { //se recorren los datos 
       $IdentificadorDependencia=$Datos["idDependencia"]; 
-      $Nombre=$Datos['nombreDeependencia'];
+      $Nombre=$Datos['nombredependencia'];
       $Calle=$Datos['calle'];
       $Numero=$Datos['numero'];
       $Colonia=$Datos['colonia'];
-      $CodigoPostal=$Datos['codigoPostal']
+      $CodigoPostal=$Datos['codigopostal']
     ?>
   	  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"> <!-- se incluye otro divisor para el diseño de las dependencias-->
 				<div class="panel price panel-red">  <!-- se crea un panel principal que contendra las tarjetas-->
@@ -73,8 +68,12 @@ if (!$_GET || $_GET['pagina']<1)
               ?> 
               </strong>
             </p> <!-- nombre de las dependencias-->
+
 					</div>
 					<ul class="list-group list-group-flush text-center"> <!-- se agrupan los datos de las dependencias-->
+              <li class="list-group-item"><i class="icon-ok text-danger"></i><b>Nombre:</b>
+              <?php echo $Nombre ?> 
+              </li><!-- Calle y numero de las dependencias-->
 						<li class="list-group-item"><i class="icon-ok text-danger"></i><b>Dirección:</b>
               <?php echo $Calle ?> 
               #<?php echo$Numero ?>
