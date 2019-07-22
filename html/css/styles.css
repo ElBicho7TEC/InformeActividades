@@ -9,15 +9,13 @@
 	color: #000000;
 
 }
-
 .formularioLogin span {
 	width: 200px;
 	display: inline-block;
-	color: #fff;
+
 }
 .formularioLogin label {
 	width: 100px;
 	display: inline-block;
-	color: #fff;
 }
 
