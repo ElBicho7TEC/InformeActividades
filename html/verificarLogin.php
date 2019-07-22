@@ -8,10 +8,10 @@ $resultado = $login->fetchAll(); //se obtienen los datos de la consulta
 $totalUsuarios=$login->rowCount(); //se cuenta el numero de registros
 if($totalUsuarios>0){
 	foreach ($resultado as $User) { //se extraen los datos
-		$idUsuarios=$User['idUsuario'];
+		$idUsuarios=$User['idusuario'];
 		$contraseña=$User['contrasena'];
-		$idDependencia=$User['idDependencia'];
-		$idRol=$User['idRol'];
+		$idDependencia=$User['iddependencia'];
+		$idRol=$User['idrol'];
 	}
 	include("decodificacion.php"); // se incluye el archivo de desencriptacion
     $Contradesencriptada=decodificar($contraseña); //se ejecuta la funcion de desencriptar
