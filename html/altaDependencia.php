@@ -1,19 +1,7 @@
 <html>
 	<head>
 		<title>Alta Dependencia</title>
-		
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Anton|Dosis:400,800" rel="stylesheet">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="shortcut icon" href="logos/AhucatlanTransparente.png" type="image/png" />
-	<?php include 'header.php' ?>
+			<?php include 'header.php'; ?>
 	</head>
 	
 	<body>
@@ -69,7 +57,7 @@
 	<div class="container">
 		<h1 class="text-center">Registro de Dependencias</h1>
 		<div class="col-md-6" >
-			<form class="Myformulario" style="margin-top: 150p%; margin-left: 15%;" action="dataDependencia.php" method="post">
+			<form class="Myformulario" style="margin-top: 150p%; margin-left: 15%;" action="altaDependenciaDB.php" method="post">
 				<div class="form-group">
 					<label>Nombre:</label>
 					<input placeholder="Ejemplo: Transito" type="text" name="nombre" maxlength="45" size="50" required=" " pattern="[a-zA-Z\s]+">
@@ -82,10 +70,10 @@
 					<label>C&oacute;digo Postal:</label>
 					<input placeholder="Ejemplo: 63999" type="text" name="cp"  maxlength="45" size="50" required=" " pattern="[0-9]{5}">
 					<label>Entre Calles:</label>
-					<input placeholder="Ejemplo: Mercado e Hidalgo" type="text" name="referencias"   maxlength="45" size="50" required=" " pattern="[]+">
+					<input placeholder="Ejemplo: Mercado e Hidalgo" type="text" name="referencias"   maxlength="45" size="50" required=" " pattern="[a-zA-Z\s]+">
 				</div>
 				<div class="form-group text-center">
-					<input class="btn btn-info" type="submit" id="Guardar" name="Guardar" value="Ingresar">
+					<input class="btn btn-info" type="submit" id="Guardar" name="Guardar" value="Dar de Alta">
 				</div>
 			</form>
 			

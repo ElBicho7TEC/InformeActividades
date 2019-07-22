@@ -1,19 +1,30 @@
+<?php if(isset($_GET["idDependencia"]))
+ {//Cambiar por POST a futuro
+    $id=$_GET["idDependencia"];
+    include "conexion.php";
+    $cadena='SELECT *FROM dependencia where idDependencia= :id';
+    $gsent = $conn->prepare($cadena);
+    $gsent->bindParam(':id', $id, PDO::PARAM_INT);
+    $gsent->execute();
+    $resultado = $gsent->fetch(PDO::FETCH_ASSOC);
+    $nombreDeependencia=$resultado['nombredependencia'];
+    $calle=$resultado['calle'];
+    $colonia=$resultado['colonia'];
+    $numero=$resultado['numero'];
+    $codigoPostal=$resultado['codigopostal'];
+    $entreCalles=$resultado['entrecalles'];
+   
+ }
+else
+ {//Si no se manda ID, entonces mandar a la de alta de dependencia
+	header("Location: altaDependencia.php");
+ }
+ ?>
+
 <html>
 	<head>
-		<title>Modificar Dependencia</title>
-		
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Anton|Dosis:400,800" rel="stylesheet">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="shortcut icon" href="logos/AhucatlanTransparente.png" type="image/png" />
-	<?php include 'header.php' ?>
+		<title>Moficiar Dependencia</title>
+			<?php include 'header.php'; ?>
 	</head>
 	
 	<body>
@@ -69,22 +80,23 @@
 	<div class="container">
 		<h1 class="text-center">Modificar Dependencias</h1>
 		<div class="col-md-6" >
-			<form class="Myformulario" style="margin-top: 150p%; margin-left: 15%;" action="dataDependencia.php" method="post">
+			<form class="Myformulario" style="margin-top: 150p%; margin-left: 15%;" action="modificarDependenciaDB.php" method="post">
 				<div class="form-group">
 					<label>Nombre:</label>
-					<input placeholder="Ejemplo: Transito" type="text" name="nombre" maxlength="45" size="50" required=" " pattern="[a-zA-Z\s]+">
+					<input placeholder="Ejemplo: Transito" type="text" name="nombre" maxlength="45" size="50" required=" " pattern="[a-zA-Z\s]+" value="<?php echo $nombreDeependencia ?>">
 					<label>Calle:</label>
-					<input placeholder="Ejemplo: Mercado" type="text" name="calle"  maxlength="45" size="50" required=" " pattern="[a-zA-Z\s]+">
+					<input placeholder="Ejemplo: Mercado" type="text" name="calle"  maxlength="45" size="50" required=" " pattern="[a-zA-Z\s]+" value="<?php echo $calle ?>">
 					<label>Colonia:</label>
-					<input placeholder="Ejemplo: Centro" type="text" name="colonia" maxlength="45" size="50" required=" " pattern="[a-zA-Z\s]+">
+					<input placeholder="Ejemplo: Centro" type="text" name="colonia" maxlength="45" size="50" required=" " pattern="[a-zA-Z\s]+" value="<?php echo $colonia ?>">
 					<label>N&uacute;mero:</label>
-					<input placeholder="Ejemplo: 11" type="text" name="numero"  maxlength="45" size="50" pattern="[0-9]{1,3}$" required=" " pattern="[a-zA-Z\s]+">
+					<input placeholder="Ejemplo: 11" type="text" name="numero"  maxlength="45" size="50" pattern="[0-9]{1,3}$" required=" " pattern="[a-zA-Z\s]+" value="<?php echo $numero ?>">
 					<label>C&oacute;digo Postal:</label>
-					<input placeholder="Ejemplo: 63999" type="text" name="cp"  maxlength="45" size="50" required=" " pattern="[0-9]{5}">
+					<input placeholder="Ejemplo: 63999" type="text" name="cp"  maxlength="45" size="50" required=" " pattern="[0-9]{5}" value="<?php echo $codigoPostal ?>">
 					<label>Entre Calles:</label>
-					<input placeholder="Ejemplo: Mercado e Hidalgo" type="text" name="referencias"   maxlength="45" size="50" required=" " pattern="[]+">
+					<input placeholder="Ejemplo: Mercado e Hidalgo" type="text" name="referencias"   maxlength="45" size="50" required=" " pattern="[a-zA-Z\s]+" value="<?php echo $entreCalles ?>">
 				</div>
 				<div class="form-group text-center">
+				<input type="hidden"  name="id" value="<?php echo $id ?>"> <!--Como esta en hidden no se va a mostrar en la interfaz -->
 					<input class="btn btn-info" type="submit" id="Guardar" name="Guardar" value="Modificar">
 				</div>
 			</form>
