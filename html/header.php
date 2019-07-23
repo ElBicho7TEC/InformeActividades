@@ -393,7 +393,7 @@
 
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2242">
-                            <a href="dataRol.php">
+                            <a href="altaRol.php">
                               Agregar Nuevo Rol
                             </a>
                           </li>
@@ -416,7 +416,7 @@
                         
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
-                            <a href="dataDependencia.php">
+                            <a href="altaDependencia.php">
                               Agregar Nueva Dependencia 
                             </a>
                           </li>
