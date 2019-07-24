@@ -194,11 +194,11 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_insertar_usuarios`(
   in apellidopaterno VARCHAR(45),
   in apellidomaterno VARCHAR(45),
   in iddependencia INT,
-  in idol INT
+  in idRol INT
 )
 BEGIN
-	insert into usuarios values (default, correoelectronico, contrasena, nombre,
-    apellidopaterno, apellidomaterno, iddependencia, idrol);
+	insert into usuarios values (null, correoelectronico, contrasena, nombre,
+    apellidopaterno, apellidomaterno, iddependencia, idRol);
 END
 //
 DELIMITER ;
