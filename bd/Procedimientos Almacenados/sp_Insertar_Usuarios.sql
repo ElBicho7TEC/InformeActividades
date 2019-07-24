@@ -8,6 +8,6 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_Insertar_Usuarios`(
   in idRol INT
 )
 BEGIN
-	insert into usuarios values (default, correoElectronico, contraseña, Nombre,
+	insert into usuarios values (null, correoElectronico, contraseña, Nombre,
     apellidoPaterno, apellidoMaterno, idDependencia, idRol);
 END
