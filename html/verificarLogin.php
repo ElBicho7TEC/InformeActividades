@@ -29,6 +29,9 @@ if($totalUsuarios>0){
 		$cookie_name = "token";
 		$cookie_value = $token;
 		setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+        setcookie("Dependencia",$idDependencia); // se guarda la variable de la dependencia del usuario en una cookie para usarla en indexDirecciones
+        setcookie("usuario",$idUsuarios);// se guarda la variable del usuario del usuario en una cookie para usarla en indexDirecciones
+        setcookie("Rol",$idRol);
 		header("Location: index.php?status=1");//Manda al usuario a la página principal del sitio, con estado 1 (sesión iniciada)
 	}else{
 		echo "Contraseña incorrecta";
