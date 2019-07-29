@@ -5,7 +5,7 @@ if (!$_GET || $_GET['pagina']<1)
   $_GET['pagina']=1;
 }
 ?>
-<div class="container"> <!--Contenedor indica que lo que este dentro sera centrado--->
+<div class="container-fluid"> <!--Contenedor indica que lo que este dentro sera centrado--->
   <div class="row justify-content-center text-center text-md-left" > <!--Contenedor de boostrap que indica las columnas que contendra--->
   	<?php
     include 'conexion.php'; //se incluye la conexión
