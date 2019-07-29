@@ -1,7 +1,9 @@
 <html>
 	<head>
 		<title>Alta Rol</title>
-			<?php 
+        <?php include 'getInfo.php'; ?>
+
+        <?php
 		include 'header.php'; 
 	?>
 	</head>	

@@ -1,3 +1,4 @@
+<?php include 'getInfo.php'; ?>
 <?php
 include 'header.php';
 if (!$_GET || $_GET['pagina']<1) 

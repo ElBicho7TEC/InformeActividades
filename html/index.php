@@ -1,6 +1,7 @@
-<?php 
+<?php
+    include 'getInfo.php';
   include 'header.php';
-  include 'getInfo.php'//se incluye getInfo en todas las pantallas que requieran la informacion de la cuenta,este archivo redirige al login siempre que no haya una sesión vigente?>
+  ?>
 
   <div class="container">
     <div class="row justify-content-center text-center text-md-left">

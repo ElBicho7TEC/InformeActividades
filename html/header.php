@@ -407,6 +407,11 @@
                           </li>
                         </ul>
                       </li>
+                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
+                           <a href="logout.php">
+                               Logout
+                           </a>
+                       </li>
                     </ul>
                   </div>
                 </div>

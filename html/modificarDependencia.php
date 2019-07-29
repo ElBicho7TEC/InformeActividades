@@ -1,3 +1,4 @@
+<?php include 'getInfo.php'; ?>
 <?php if(isset($_GET["idDependencia"]))
  {//Cambiar por POST a futuro
     $id=$_GET["idDependencia"];

@@ -2,6 +2,7 @@
 
 <?php
 include("conexion.php");
+if (isset($_COOKIE['token'])) {
 $token=$_COOKIE["token"];
 	$getID = $conn->prepare('SELECT idUsuario FROM tokensesion where token='.'\''.$token.'\' and expira>'.'\''.date('Y-m-d').'\'');  //se obtienen el id del usuario loggeado
 	$getID->execute(); //se ejecuta la consulta
@@ -28,10 +29,12 @@ $token=$_COOKIE["token"];
 			unset($_COOKIE['token']);
 			setcookie('token', '', time() - 3600, '/'); // empty value and old timestamp
 		}//borra la cookie al ya no ser valida
-		header("Location: login.php	");//Entra a esta condición unicamente si la sesión no existe en la BD o la fecha de expiración ha vencido, redirige al login
+		header("Location: login.php?error=3	");//Entra a esta condición unicamente si la sesión no existe en la BD o la fecha de expiración ha vencido, redirige al login
 		}
-
-
+}
+else{
+    header("Location: login.php?error=3	");// Si no existe el token te redirige al login
+}
 
 
 

@@ -1,7 +1,8 @@
 <html>
 	<head>
 		<title>Alta Dependencia</title>
-			<?php include 'header.php'; ?>
+        <?php include 'getInfo.php'; ?>
+        <?php include 'header.php'; ?>
 	</head>
 	<body>
 	<div class="container">

@@ -24,7 +24,16 @@
         </div>
     </div>
     <?php }
-    } ?>
+    else if ($idError==3) { //Redirigido
+        ?>
+        <div class="container">
+            <div class="alert alert-danger" role="alert">
+                <p>Inicia sesión antes de poder visitar esta página.</p>
+            </div>
+        </div>
+    <?php }
+     } ?>
+
 <div class="container" id="maindiv">
   <div class="row justify-content-center text-center text-md-left">
 	  <div class="col-12 col-md-4 mt-4 mt-md-0">
