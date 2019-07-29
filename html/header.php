@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es-ES">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="pingback" href="http://ahuacatlanavanza.gob.mx/xmlrpc.php" />
-
-           <!-- html5shiv for IE8 and less  -->
-            <!--[if lt IE 9]>
-              <script src="http://ahuacatlanavanza.gob.mx/wp-content/themes/customizr/inc/assets/js/html5.js"></script>
-            <![endif]-->
+ <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Anton|Dosis:400,800" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
     <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);
 
     </script>
@@ -363,18 +359,13 @@
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-172">
                         <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
                           Usuarios
-                          <strong class="caret">
-                            
-                          </strong>
                         </a>
-                        
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
                             <a href="registro.php">
                               Agregar Nuevo Usuario
                             </a>
                           </li>
-
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
                             <a href="#">
                               Modificar Usuario
@@ -382,22 +373,16 @@
                           </li>
                         </ul>
                       </li>
-
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-327">
                         <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
                           Roles
-                          <strong class="caret">
-                            
-                          </strong>
                         </a>
-
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2242">
                             <a href="altaRol.php">
                               Agregar Nuevo Rol
                             </a>
                           </li>
-
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2242">
                             <a href="#">
                               Modificar Rol
@@ -405,22 +390,16 @@
                           </li>
                         </ul>
                       </li>
-
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-383">
                         <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
                           Dependencias
-                          <strong class="caret">
-                            
-                          </strong>
                         </a>
-                        
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
                             <a href="altaDependencia.php">
                               Agregar Nueva Dependencia 
                             </a>
                           </li>
-                           
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2793">
                             <a href="#">
                               Modificar Dependencia
@@ -428,79 +407,10 @@
                           </li>
                         </ul>
                       </li>
-
-                      <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384">
-                        <a href=".../">
-                          ???
-                        </a>
-                      </li>
-                      
-                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-385">
-                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="...">
-                          ???
-                          <strong class="caret">
-                            
-                          </strong>
-                        </a>
-                        
-                         <ul class="dropdown-menu">
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown-submenu menu-item-1005">
-                            <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="...">
-                              ???
-                            </a>
-                            
-                            <ul class="dropdown-menu">
-                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1002">
-                                <a href="...">
-                                  ???
-                                </a>
-                              </li>
-                              
-                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001">
-                                <a href="...">
-                                  ???
-                                </a>
-                              </li>
-                              
-                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395">
-                                <a href="...">
-                                  ???
-                                </a>
-                              </li>
-                              
-                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394">
-                                <a href="...">
-                                  ???
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
-                          
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown-submenu menu-item-1009">
-                            <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="...">
-                              ???
-                            </a>
-                            
-                            <ul class="dropdown-menu">
-                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397">
-                                <a href="...">
-                                  ???
-                                </a>
-                              </li>
-                              
-                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396">
-                                <a href="...">
-                                  ???
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul> 
-                      </li> -->
                     </ul>
                   </div>
                 </div>
-
+                
                 <div class="btn-toggle-nav pull-right">
                   <button type="button" class="btn menu-btn" data-toggle="collapse" data-target=".nav-collapse" title="Abrir el menú" aria-label="Abrir el menú">
                     <span class="icon-bar">
