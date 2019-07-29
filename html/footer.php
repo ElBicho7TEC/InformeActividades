@@ -167,7 +167,6 @@
                 </div>
               </aside>
 			</div><!-- .{$key}_widget_class -->
-
 						<div id="footer_three" class="span4">
 							<aside id="search-6" class="widget widget_search">
                 <h3 class="widget-title">
