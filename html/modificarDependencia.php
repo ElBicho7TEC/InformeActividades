@@ -80,7 +80,7 @@ else
 	
 	<div class="container">
 		<h1 class="text-center">Modificar Dependencias</h1>
-		<div class="col-md-6" >
+		<div class="col-12" >
 			<form class="Myformulario" style="margin-top: 150p%; margin-left: 15%;" action="modificarDependenciaDB.php" method="post">
 				<div class="form-group">
 					<label>Nombre:</label>
