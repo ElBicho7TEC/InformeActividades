@@ -9,7 +9,7 @@ $token=$_COOKIE["token"];
 	$resultado = $getID->fetchAll(); //se obtienen los datos de la consulta
 	if($getID->rowCount()>0){
 		foreach ($resultado as $User) { //se extraen los datos
-			$idUsuarios=$User['idUsuario'];
+			$idUsuarios=$User['idusuario'];
 		}
 		$getData = $conn->prepare('SELECT correoelectronico,nombre,apellidopaterno,apellidomaterno,iddependencia,idrol FROM usuarios where idusuario='.'\''.$idUsuarios.'\'');  //se obtienen los datos del usuario
 		$getData->execute(); //se ejecuta la consulta

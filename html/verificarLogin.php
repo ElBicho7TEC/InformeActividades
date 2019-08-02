@@ -2,7 +2,7 @@
 include("conexion.php");
 $correo=$_POST['correo'];
 $pass=$_POST['pass'];
- $login = $conn->prepare("SELECT * FROM usuarios where correoeelectronico=?");  //se realiza la consulta de los datos del usuario
+ $login = $conn->prepare("SELECT * FROM usuarios where correoelectronico=?");  //se realiza la consulta de los datos del usuario
 $login->execute(array($correo)); //se ejecuta la consulta
 $resultado = $login->fetchAll(); //se obtienen los datos de la consulta
 $totalUsuarios=$login->rowCount(); //se cuenta el numero de registros
