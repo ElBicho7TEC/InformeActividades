@@ -4,24 +4,24 @@
 include("conexion.php");
 if (isset($_COOKIE['token'])) {
 $token=$_COOKIE["token"];
-	$getID = $conn->prepare('SELECT idUsuario FROM tokensesion where token='.'\''.$token.'\' and expira>'.'\''.date('Y-m-d').'\'');  //se obtienen el id del usuario loggeado
+	$getID = $conn->prepare('SELECT idusuario FROM tokensesion where token='.'\''.$token.'\' and expira>'.'\''.date('Y-m-d').'\'');  //se obtienen el id del usuario loggeado
 	$getID->execute(); //se ejecuta la consulta
 	$resultado = $getID->fetchAll(); //se obtienen los datos de la consulta
 	if($getID->rowCount()>0){
 		foreach ($resultado as $User) { //se extraen los datos
 			$idUsuarios=$User['idUsuario'];
 		}
-		$getData = $conn->prepare('SELECT correoElectronico,Nombre,apellidoPaterno,apellidoMaterno,idDependencia,idRol FROM usuarios where idUsuario='.'\''.$idUsuarios.'\'');  //se obtienen los datos del usuario
+		$getData = $conn->prepare('SELECT correoelectronico,nombre,apellidopaterno,apellidomaterno,iddependencia,idrol FROM usuarios where idusuario='.'\''.$idUsuarios.'\'');  //se obtienen los datos del usuario
 		$getData->execute(); //se ejecuta la consulta
 		$resultado = $getData->fetchAll(); //se obtienen los datos de la consulta
 		if($getData->rowCount()>0){
 			foreach ($resultado as $User) { //se extraen los datos
-				$correoElectronico=$User['correoElectronico'];
-				$Nombre=$User['Nombre'];
-				$apellidoPaterno=$User['apellidoPaterno'];
-				$apellidoMaterno=$User['apellidoMaterno'];
-				$idDependencia=$User['idDependencia'];
-				$idRol=$User['idRol'];
+				$correoElectronico=$User['correoelectronico'];
+				$Nombre=$User['nombre'];
+				$apellidoPaterno=$User['apellidopaterno'];
+				$apellidoMaterno=$User['apellidomaterno'];
+				$idDependencia=$User['iddependencia'];
+				$idRol=$User['idrol'];
 			}
 		}
 	}else{
