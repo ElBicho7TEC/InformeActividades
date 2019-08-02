@@ -1,15 +1,30 @@
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_Insertar_Actividades`(
-	in nombre_Actividad VARCHAR(500),
+USE gestion_plan_desarrollo;
+
+#Procedimiento almacenado para insertar Actividades 
+DELIMITER //
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_insertar_actividades`(
+	in idfotos int,
+    in ruta varchar(200),
+	in nombre_actividad VARCHAR(500),
 	in descripcion VARCHAR(500),
-	in fechaDia INT,
-	in fechaMes INT,
-	in fechaAno INT,
-	in Bimestre INT,
-	in idDependencia INT,
-	in idfotosEvidencia INT,
-	in idplanDesarrollo INT
+	in fechadia INT,
+	in fechames INT,
+	in fechaano INT,
+	in bimestre INT,
+	in iddependencia INT,
+    in idplandesarrollo int,
+    in idusuario int,
+    in idact int,
+    in diacaptura int,
+    in mescaptura int, 
+    in aniocaptura int
 )
 BEGIN
-	insert into actividad values (default, nombre_Actividad, descripcion, fechaDia, fechaMes, fechaAno,
-    Bimestre, idDependencia, idfotosEvidencia, idplanDesarrollo);
+	insert into fotosevidencia values(null, ruta);
+    set idfotos=(select max(idfotosevidencia) as idfotosevidencia from fotosevidencia);
+    insert into actividad values (null, nombre_actividad, descripcion, fechadia, fechames, fechaano, bimestre,
+    iddependencia, idfotos, idplandesarrollo);
+	set idact=(select max(idactividad) as idactividad from actividad);
+    insert into historial_actividad values (idusuario, idact, diacaptura,mescaptura,aniocaptura);
 END
+//
