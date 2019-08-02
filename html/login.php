@@ -45,7 +45,12 @@
 	          <div class="col-12   form-group">
 	              <label>Password</label>
 	              <input type="password" id="pass" name="pass" value="" maxlength="73" required="">
-	          </div>
+
+                  <div class="col-12   form-group">
+                      <label>Mantener sesión iniciada:</label><br>
+                      <input type="radio" name="mantener" value="si">Sí<br>
+                      <input type="radio" name="mantener" value="no" checked="checked">No<br>
+                  </div>
 	          <div class="col-12   form-group ">
 	              <input type="submit"  id="entrar" name="entrar" value="Entrar">
 	          </div>

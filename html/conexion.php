@@ -1,10 +1,9 @@
 <?php
 try{
-	$conn = new PDO('mysql:host=localhost:3306; dbname=gestion_plan_desarrollo; chartset=gbk',  "root", "root");
-	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn = new PDO('mysql:host=ahuacatlan.serviciosmunicipales.com.mx; dbname=servi301_Gestion_Plan_Desarrollo; chartset=gbk',  "servi301_root", "msBKy#@,SZ{1");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(PDOException $e){
-	echo "ERROR: " . $e->getMessage();
+    echo "ERROR: " . $e->getMessage();
 }
-
 ?>

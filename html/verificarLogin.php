@@ -28,7 +28,12 @@ if($totalUsuarios>0){
 		$insertToken->execute(); //se ejecuta la inserción
 		$cookie_name = "token";
 		$cookie_value = $token;
-		setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+		if ($_POST ['mantener']=="si"){//entra si el usuario selecciona mantener la sesión iniciada en el equipo, dandole una vigencia de 1 mes
+			setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+		}
+		if ($_POST ['mantener']=="no"){
+			setcookie($cookie_name, $cookie_value, 0, "/");//opción por default, la cookie se borra al cerrar el navegador
+		  }
 		header("Location: index.php?status=1");//Manda al usuario a la página principal del sitio, con estado 1 (sesión iniciada)
 	}else{
 		echo "Contraseña incorrecta";
