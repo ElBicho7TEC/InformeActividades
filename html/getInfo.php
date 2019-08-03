@@ -1,5 +1,3 @@
-
-
 <?php
 include("conexion.php");
 if (isset($_COOKIE['token'])) {
@@ -29,7 +27,7 @@ $token=$_COOKIE["token"];
 			unset($_COOKIE['token']);
 			setcookie('token', '', time() - 3600, '/'); // empty value and old timestamp
 		}//borra la cookie al ya no ser valida
-		header("Location: login.php?error=3	");//Entra a esta condición unicamente si la sesión no existe en la BD o la fecha de expiración ha vencido, redirige al login
+		header("Location: login.php?error=3	");//Entra a esta condici車n unicamente si la sesi車n no existe en la BD o la fecha de expiraci車n ha vencido, redirige al login
 		}
 }
 else{
