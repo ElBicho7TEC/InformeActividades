@@ -1,8 +1,7 @@
-USE gestion_plan_desarrollo;
+#Procedimiento almacenado para insertar actividad
 
-#Procedimiento almacenado para insertar Actividades 
 DELIMITER //
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_insertar_actividades`(
+CREATE  PROCEDURE sp_insertar_actividades(
 	in idfotos int,
     in ruta varchar(200),
 	in nombre_actividad VARCHAR(500),
@@ -28,3 +27,4 @@ BEGIN
     insert into historial_actividad values (idusuario, idact, diacaptura,mescaptura,aniocaptura);
 END
 //
+DELIMITER ;

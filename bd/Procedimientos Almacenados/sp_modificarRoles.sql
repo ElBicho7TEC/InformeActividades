@@ -1,8 +1,9 @@
-#Procedimiento almacenado para modificar Usuario
+#Procedimiento almacenado para modificar Roles
+
 DELIMITER //
-CREATE  PROCEDURE `sp_modificarusuario`(var_idusuario int, var_nombre varchar(45), var_apellidopat varchar(45),var_apellidomat varchar (45),var_contrasena varchar(45))
+CREATE  PROCEDURE `sp_modificarrol`(var_idrol int,var_tiporol)
 BEGIN 
-update usuarios set contrasena=var_contrasena, nombre=var_nombre, apellidopaterno=var_apellidopat, apellidomaterno=var_apellidomat WHERE idusuario=var_idusuario;
-END;
+UPDATE rol SET tiporol=var_tiporol WHERE idrol = var_idrol;
+END
 //
 DELIMITER ;
