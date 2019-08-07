@@ -77,7 +77,7 @@ $ContraEncriptada=codificar($Contra);// mandar a llamar la funcion para encripta
 $Dependencia=1;
 $Rol=1;
 include 'conexion.php';
-$stmt=$conn->prepare("call sp_Insertar_Usuarios(?,?,?,?,?,?,?)");
+$stmt=$conn->prepare("call sp_insertar_usuarios(?,?,?,?,?,?,?)");
 $stmt->bindParam(1,$Correo, PDO::PARAM_STR);
 $stmt->bindParam(2,$ContraEncriptada, PDO::PARAM_STR); //se manda como parametro la contraseña encriptada
 $stmt->bindParam(3,$Nombre, PDO::PARAM_STR);

@@ -14,10 +14,10 @@
     $numero=$resultado['numero'];
     $codigoPostal=$resultado['codigopostal'];
     $entreCalles=$resultado['entrecalles'];
-   
+
  }
 else
- {//Si no se manda ID, entonces mandar a la de alta de dependencia
+ {//Si no se manda ID, entonces mandar al listado  de dependencias
 	header("Location: listadoDependencia.php");
  }
  ?>
@@ -27,18 +27,18 @@ else
 		<title>Moficiar Dependencia</title>
 			<?php include 'header.php'; ?>
 	</head>
-	
+
 	<body>
 	<div class="header-bottom">
-	
+
 	<div class="container">
 	<div class="row justify-content-center text-center text-md-left">
 				</div>
-				
+
 			</div>
 	</div>
 	</div>
-	
+
 	<div class="container">
 		<h1 class="text-center">Modificar Dependencias</h1>
 		<div class="col-12" >
@@ -62,7 +62,7 @@ else
 					<input class="btn btn-info" type="submit" id="Guardar" name="Guardar" value="Modificar">
 				</div>
 			</form>
-			
+
 		</div>
 	</div>
 	<div class="container">
