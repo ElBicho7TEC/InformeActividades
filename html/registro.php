@@ -1,5 +1,5 @@
 <?php include 'header.php' ?>
-		<div class="container"> 
+		<div class="container">
 			<div class="row justify-content-center text-center text-md-left">
 				<div class="col-12 " >
 					<form  class="Myformulario" method='POST' >
@@ -36,8 +36,8 @@
 					       <span>Rol:</span>
 						   <select  id="Rol" name="Rol" required="">
 						   	<p></p>
-						   	<?php  
-						   	include 'Conexion.php';
+						   	<?php
+						   	include 'conexion.php';
 						   	$datos = $conn->query('SELECT * FROM rol');
 						   	while ($valores=$datos->fetch()) {
 						   		echo "'<option value= $valores[idrol]> $valores[tiporol] </option>'";
@@ -49,8 +49,8 @@
 				           <span>Dependencia:</span>
 						   <select  id="Dependencia" name="Rol" required="">
 						   	<p></p>
-						   	<?php  
-						   	include 'Conexion.php';
+						   	<?php
+						   	include 'conexion.php';
 						   	$datos = $conn->query('SELECT * FROM dependencia');
 						   	while ($valores=$datos->fetch()) {
 						   		echo "'<option value= $valores[iddependencia]> $valores[nombredependencia] </option>'";
@@ -65,8 +65,8 @@
     			 </div>
     	    </div>
 		</div>
-<?php 
-include 'footer.php'; 
+<?php
+include 'footer.php';
 if (isset($_POST["Nombre"])) {
 $id=1;
 $Nombre=$_POST["Nombre"];
@@ -79,7 +79,7 @@ $Rol=1;
 include 'conexion.php';
 $stmt=$conn->prepare("call sp_Insertar_Usuarios(?,?,?,?,?,?,?)");
 $stmt->bindParam(1,$Correo, PDO::PARAM_STR);
-$stmt->bindParam(2,$ContraEncriptada, PDO::PARAM_STR); //se manda como parametro la contraseña encriptada 
+$stmt->bindParam(2,$ContraEncriptada, PDO::PARAM_STR); //se manda como parametro la contraseña encriptada
 $stmt->bindParam(3,$Nombre, PDO::PARAM_STR);
 $stmt->bindParam(4,$ApellidoP, PDO::PARAM_STR);
 $stmt->bindParam(5,$ApellidoM, PDO::PARAM_STR);
