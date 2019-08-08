@@ -88,7 +88,7 @@ if (!$_GET || $_GET['pagina']<1)
             </li><!--Codigo Postal de las dependencias-->
 					</ul>
 					<div class="panel-footer">
-						<a class="btn btn-lg btn-block btn-info" href="#">
+						<a class="btn btn-lg btn-block btn-info" href="generarinforme.php">
               Informes
             </a><!--Boton que mandara a los informes de las dependencia elegida-->
 					</div>
