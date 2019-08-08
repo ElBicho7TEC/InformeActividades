@@ -36,8 +36,7 @@ $anioCaptura=$fechaCaptura['year']; //año del dia
 
 
 if ($Foto!='') {
-    (move_uploaded_file($url_temp,$src);
-
+    move_uploaded_file($url_temp,$src);
     }
 
     include 'conexion.php';

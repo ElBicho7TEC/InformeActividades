@@ -407,6 +407,52 @@
                           </li>
                         </ul>
                       </li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-400">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+                          Planes de Desarrollo
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2236">
+                            <a href="insertarPlanDesarrollo.php">
+                              Agregar Nuevo Plan
+                            </a>
+                          </li>
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2236">
+                            <a href="#">
+                              Modificar Plan
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-400">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+                          Actividades
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2236">
+                            <a href="insertarActividad.php">
+                              Agregar Nueva Actividad
+                            </a>
+                          </li>
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2236">
+                            <a href="#">
+                              Modificar Plan
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-400">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+                          Informes
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2236">
+                            <a href="generarinforme.php">
+                              Generar Informe
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
                            <a href="logout.php">
                                Logout
