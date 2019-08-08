@@ -31,10 +31,10 @@ $token=$_COOKIE["token"];
 		}
 }
 else{
+	if(isset($hastaAqui)) {
+$idRol="";
+	} else {
     header("Location: login.php?error=3	");// Si no existe el token te redirige al login
 }
-
-
-
-
+}
 ?>

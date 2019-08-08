@@ -1,5 +1,5 @@
 <?php
-   include 'getInfo.php';
+    include 'getInfo.php';
    if($idRol==1)
    {
      ?>

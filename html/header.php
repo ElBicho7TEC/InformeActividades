@@ -348,7 +348,7 @@
                 </div>
 
                 <?php include 'menus.php' ?>
-                
+
                 <div class="btn-toggle-nav pull-right">
                   <button type="button" class="btn menu-btn" data-toggle="collapse" data-target=".nav-collapse" title="Abrir el menú" aria-label="Abrir el menú">
                     <span class="icon-bar">
