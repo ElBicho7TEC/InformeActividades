@@ -1,7 +1,7 @@
 <?php
   function menu()
   {
-   include 'getinfo.php';
+   include 'getInfo.php';
    if($idRol==1)
    {
     echo'               <div class="nav-collapse collapse">
