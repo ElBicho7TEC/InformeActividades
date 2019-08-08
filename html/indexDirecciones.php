@@ -1,4 +1,7 @@
 <?php
+include 'getInfo.php';
+?>
+<?php
 include 'header.php';
 ?>
 <html>
@@ -7,10 +10,9 @@ include 'header.php';
     <body>
     <?php
      include 'conexion.php';
-     
-    ?>	
+    ?>
     </body>
 </html>
-<?php 
+<?php
 include 'footer.php'
 ?>

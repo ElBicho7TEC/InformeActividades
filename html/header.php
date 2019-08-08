@@ -12,21 +12,21 @@
     </script>
 
     <title>XLI Ayuntamiento de Ahuacatlán Nayarit  &#8211; Gobierno que Construye, Municipio que Avanza </title>
-    
+
     <link rel='dns-prefetch' href='//www.google.com' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
     <link rel="alternate" type="application/rss+xml" title="XLI Ayuntamiento de Ahuacatlán Nayarit  &raquo; Feed" href="http://ahuacatlanavanza.gob.mx/feed/" />
     <link rel="alternate" type="application/rss+xml" title="XLI Ayuntamiento de Ahuacatlán Nayarit  &raquo; RSS de los comentarios" href="http://ahuacatlanavanza.gob.mx/comments/feed/" />
-    
+
     <script type="text/javascript">
       window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ahuacatlanavanza.gob.mx\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2"}};
       !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
     </script>
-    
+
     <style type="text/css">
       img.wp-smiley,
-      img.emoji 
+      img.emoji
       {
        display: inline !important;
        border: none !important;
@@ -39,7 +39,7 @@
        padding: 0 !important;
       }
     </style>
-  
+
     <link rel='stylesheet' id='tc-gfonts-css'  href='//fonts.googleapis.com/css?family=Fjalla+One:400%7CCantarell:400' type='text/css' media='all' />
     <link rel='stylesheet' id='wp-block-library-css'  href='http://ahuacatlanavanza.gob.mx/wp-includes/css/dist/block-library/style.min.css?ver=5.2.2' type='text/css' media='all' />
     <link rel='stylesheet' id='wp-components-css'  href='http://ahuacatlanavanza.gob.mx/wp-includes/css/dist/components/style.min.css?ver=5.2.2' type='text/css' media='all' />
@@ -58,167 +58,167 @@
     <link rel='stylesheet' id='customizr-fa-css'  href='http://ahuacatlanavanza.gob.mx/wp-content/themes/customizr/assets/shared/fonts/fa/css/font-awesome.min.css?ver=4.0.13' type='text/css' media='all' />
     <link rel='stylesheet' id='customizr-common-css'  href='http://ahuacatlanavanza.gob.mx/wp-content/themes/customizr/inc/assets/css/tc_common.min.css?ver=4.0.13' type='text/css' media='all' />
     <link rel='stylesheet' id='customizr-skin-css'  href='http://ahuacatlanavanza.gob.mx/wp-content/themes/customizr/inc/assets/css/red.min.css?ver=4.0.13' type='text/css' media='all' />
-    
+
     <style id='customizr-skin-inline-css' type='text/css'>
-      .site-title,.site-description,h1,h2,h3,.tc-dropcap 
+      .site-title,.site-description,h1,h2,h3,.tc-dropcap
       {
         font-family : 'Fjalla One';
         font-weight : 400;
       }
-       
-      body,.navbar .nav>li>a 
+
+      body,.navbar .nav>li>a
       {
         font-family : 'Cantarell';
         font-weight : 400;
       }
 
-      body,.navbar .nav>li>a 
+      body,.navbar .nav>li>a
       {
         font-size : 14px;
         line-height : 1.6em;
       }
 
-      table 
-      { 
-        border-collapse: separate; 
-      }
-      
-      body table 
-      { 
-        border-collapse: collapse; 
-      }
-                          
-      .social-links .social-icon:before 
-      { 
-        content: none 
+      table
+      {
+        border-collapse: separate;
       }
 
-      .sticky-enabled .tc-shrink-on .site-logo img 
+      body table
+      {
+        border-collapse: collapse;
+      }
+
+      .social-links .social-icon:before
+      {
+        content: none
+      }
+
+      .sticky-enabled .tc-shrink-on .site-logo img
       {
         height:30px!important;width:auto!important
       }
 
-      .sticky-enabled .tc-shrink-on .brand .site-title 
+      .sticky-enabled .tc-shrink-on .brand .site-title
       {
         font-size:0.6em;opacity:0.8;line-height:1.2em
       }
-      
-      .comments-link .tc-comment-bubble 
+
+      .comments-link .tc-comment-bubble
       {
         color: #ff0000;
         border: 2px solid #ff0000;
       }
-      
-      .comments-link .tc-comment-bubble:before 
+
+      .comments-link .tc-comment-bubble:before
       {
         border-color: #ff0000;
       }
-      
-      .tc-rectangular-thumb 
+
+      .tc-rectangular-thumb
       {
         max-height: 250px;
         height :250px
       }
 
       .tc-slider-loader-wrapper
-      { 
-        display:none 
+      {
+        display:none
       }
 
-      html.js .tc-slider-loader-wrapper 
-      { 
-        display: block 
+      html.js .tc-slider-loader-wrapper
+      {
+        display: block
       }
 
-      .no-csstransforms3d .tc-slider-loader-wrapper .tc-img-gif-loader 
+      .no-csstransforms3d .tc-slider-loader-wrapper .tc-img-gif-loader
       {
         background: url('http://ahuacatlanavanza.gob.mx/wp-content/themes/customizr/assets/front/img/slider-loader.gif') no-repeat center center;
       }
 
-      .tc-slider-loader-wrapper .tc-css-loader > div 
-      { 
-        border-color:#e10707; 
-      }
-      
-      @media (min-width: 1200px) 
+      .tc-slider-loader-wrapper .tc-css-loader > div
       {
-        .tc-post-list-grid article .entry-title 
+        border-color:#e10707;
+      }
+
+      @media (min-width: 1200px)
+      {
+        .tc-post-list-grid article .entry-title
         {
           font-size:24px;line-height:38px;
         }
-        
-        .tc-post-list-grid .tc-g-cont 
+
+        .tc-post-list-grid .tc-g-cont
         {
           font-size:14px;line-height:22px;
         }
       }
-            
-      @media (max-width: 1199px) and (min-width: 980px) 
+
+      @media (max-width: 1199px) and (min-width: 980px)
       {
-        .tc-post-list-grid article .entry-title 
+        .tc-post-list-grid article .entry-title
         {
           font-size:20px;line-height:31px;
         }
-        
-        .tc-post-list-grid .tc-g-cont 
+
+        .tc-post-list-grid .tc-g-cont
         {
           font-size:13px;line-height:20px;
         }
       }
-            
-      @media (max-width: 979px) and (min-width: 768px) 
+
+      @media (max-width: 979px) and (min-width: 768px)
       {
-        .tc-post-list-grid article .entry-title 
+        .tc-post-list-grid article .entry-title
         {
           font-size:18px;line-height:27px;
         }
-        
-        .tc-post-list-grid .tc-g-cont 
+
+        .tc-post-list-grid .tc-g-cont
         {
           font-size:12px;line-height:19px;
         }
       }
-            
-      @media (max-width: 767px) 
+
+      @media (max-width: 767px)
       {
-        .tc-post-list-grid article .entry-title 
+        .tc-post-list-grid article .entry-title
         {
           font-size:24px;line-height:38px;
         }
 
-        .tc-post-list-grid .tc-g-cont 
+        .tc-post-list-grid .tc-g-cont
         {
           font-size:14px;line-height:22px;
         }
       }
-            
-      @media (max-width: 480px) 
+
+      @media (max-width: 480px)
       {
-        .tc-post-list-grid article .entry-title 
+        .tc-post-list-grid article .entry-title
         {
           font-size:20px;line-height:31px;
         }
 
-        .tc-post-list-grid .tc-g-cont 
+        .tc-post-list-grid .tc-g-cont
         {
           font-size:13px;line-height:20px;
         }
       }
-          
-      .grid-cols-3 figure 
+
+      .grid-cols-3 figure
       {
         height:225px;
         max-height:225px;
         line-height:225px;
       }
 
-      .tc-grid-border .tc-grid 
-      { 
-        border-bottom: none 
+      .tc-grid-border .tc-grid
+      {
+        border-bottom: none
       }
-      
-      .tc-grid-border .grid__item 
-      { 
+
+      .tc-grid-border .grid__item
+      {
         border-bottom: 3px solid #e10707
       }
     </style>
@@ -262,9 +262,9 @@
     <script type='text/javascript' src='http://ahuacatlanavanza.gob.mx/wp-content/plugins/wp-ui/js/wp-ui.js?ver=0.8.8'></script>
     <link rel='https://api.w.org/' href='http://ahuacatlanavanza.gob.mx/wp-json/' />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ahuacatlanavanza.gob.mx/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ahuacatlanavanza.gob.mx/wp-includes/wlwmanifest.xml" /> 
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ahuacatlanavanza.gob.mx/wp-includes/wlwmanifest.xml" />
     <meta name="generator" content="WordPress 5.2.2" />
-    
+
     <style type="text/css">
       .recentcomments a
       {
@@ -273,7 +273,7 @@
         margin:0 !important;
       }
     </style>
-    
+
     <link rel="icon" href="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2017/10/cropped-ico-32x32.png" sizes="32x32" />
     <link rel="icon" href="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2017/10/cropped-ico-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon-precomposed" href="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2017/10/cropped-ico-180x180.png" />
@@ -294,13 +294,13 @@
   <body class="home blog tc-fade-hover-links tc-no-sidebar tc-center-images skin-red tc-sticky-header sticky-disabled tc-transparent-on-scroll tc-regular-menu tc-post-list-context" itemscope itemtype="http://schema.org/WebPage">
 
     <div id="tc-page-wrap" class="">
-      
+
       <header class="tc-header clearfix row-fluid tc-tagline-off tc-title-logo-on  tc-shrink-on tc-menu-on logo-left tc-second-menu-in-sn-before-when-mobile" role="banner">
-        
+
         <div class="brand span3 pull-left">
           <a class="site-logo" href="http://ahuacatlanavanza.gob.mx/" title="XLI Ayuntamiento de Ahuacatlán Nayarit  | Gobierno que Construye, Municipio que Avanza ">
             <img src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2017/09/logo-1.png" alt="Volver a la página principal" width="272" height="90" style="max-width:250px;max-height:100px" data-no-retina class=" attachment-311"/>
-          </a>        
+          </a>
         </div> <!-- brand span3 -->
 
         <div class="navbar-wrapper clearfix span9 tc-submenu-fade tc-submenu-move tc-open-on-click pull-menu-left">
@@ -311,124 +311,57 @@
                   <div class="social-links">
                     <a rel="nofollow" class="social-icon icon-facebook"  title="Síguenos Facebook" aria-label="Síguenos Facebook" href="https://www.facebook.com/XLIAyuntamientoAhuacatlan/"  target="_blank"  style="color:#f51818;font-size:12px">
                       <i class="fa fa-facebook">
-                        
+
                       </i>
                     </a>
 
                     <a rel="nofollow" class="social-icon icon-twitter"  title="Síguenos Twitter" aria-label="Síguenos Twitter" href="javascript:void(0)"  target="_blank"  style="color:#f51818;font-size:12px">
                       <i class="fa fa-twitter">
-                        
+
                       </i>
                     </a>
 
                     <a rel="nofollow" class="social-icon icon-youtube"  title="Síguenos Youtube" aria-label="Síguenos Youtube" href="javascript:void(0)"  target="_blank"  style="color:#f51818;font-size:12px">
                       <i class="fa fa-youtube">
-                        
+
                       </i>
                     </a>
 
                     <a rel="nofollow" class="social-icon icon-instagram"  title="Síguenos Instagram" aria-label="Síguenos Instagram" href="javascript:void(0)"  target="_blank"  style="color:#f51818;font-size:12px">
                       <i class="fa fa-instagram">
-                        
+
                       </i>
                     </a>
 
                     <a rel="nofollow" class="social-icon icon-phone"  title="(324)2411254" aria-label="(324)2411254" href="tel:324-241-1254"  target="_blank"  style="color:#f51818;font-size:12px">
                       <i class="fa fa-phone">
-                        
+
                       </i>
                     </a>
 
                     <a rel="nofollow" class="social-icon icon-mail-o"  title="Email" aria-label="Email" href="mailto:ahuacatlanavanza@gmail.com"  target="_blank"  style="color:#f51818;font-size:12px">
                       <i class="fa fa-envelope-o">
-                        
+
                       </i>
                     </a>
                   </div>
                 </div>
 
-                <div class="nav-collapse collapse">
-                  <div class="menu-menu-principal-container">
-                    <ul id="menu-menu-principal-2" class="nav">
-                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
-                        <a href="indexAdministrador.php?pagina=1">
-                          Inicio
-                        </a>
-                      </li>
-
-                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-172">
-                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
-                          Usuarios
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
-                            <a href="registro.php">
-                              Agregar Nuevo Usuario
-                            </a>
-                          </li>
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
-                            <a href="#">
-                              Modificar Usuario
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-327">
-                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
-                          Roles
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2242">
-                            <a href="altaRol.php">
-                              Agregar Nuevo Rol
-                            </a>
-                          </li>
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2242">
-                            <a href="#">
-                              Modificar Rol
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-383">
-                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
-                          Dependencias
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
-                            <a href="altaDependencia.php">
-                              Agregar Nueva Dependencia 
-                            </a>
-                          </li>
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2793">
-                            <a href="#">
-                              Modificar Dependencia
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
-                           <a href="logout.php">
-                               Logout
-                           </a>
-                       </li>
-                    </ul>
-                  </div>
-                </div>
+                <?php include 'menus.php' ?>
                 
                 <div class="btn-toggle-nav pull-right">
                   <button type="button" class="btn menu-btn" data-toggle="collapse" data-target=".nav-collapse" title="Abrir el menú" aria-label="Abrir el menú">
                     <span class="icon-bar">
-                      
+
                     </span>
 
                     <span class="icon-bar">
-                      
+
                     </span><span class="icon-bar">
-                      
-                    </span> 
+
+                    </span>
                   </button>
-                </div>                
+                </div>
               </div><!-- /.row-fluid -->
             </div><!-- /.navbar-inner -->
           </div><!-- /.navbar resp -->
@@ -436,66 +369,66 @@
       </header>
 
       <div id="tc-reset-margin-top" class="container-fluid" style="margin-top:103px">
-        
-      </div>    
+
+      </div>
 
 <?php //Esta lina de código de php solo la puse para poder comentar con /*
 /*
       <div id="customizr-slider-1" class="carousel customizr-slide sliderfinal parallax-wrapper">
         <div id="tc-slider-loader-wrapper-1" class="tc-slider-loader-wrapper">
           <div class="tc-img-gif-loader">
-            
+
           </div>
-          
+
           <div class="tc-css-loader tc-mr-loader">
             <div>
-              
+
             </div>
 
             <div>
-              
+
             </div>
 
             <div>
-              
+
             </div>
-          </div>      
+          </div>
         </div>
-        
+
         <div class="carousel-inner center-slides-enabled czr-parallax-slider" data-parallax-ratio="0.55">
           <div class="czr-item active slide-2212">
             <div class="carousel-image slider-full">
-              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/b07ef292-cb5a-46db-b19e-b925ec895693-1280x500.jpg" class="slide" alt="" />    
+              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/b07ef292-cb5a-46db-b19e-b925ec895693-1280x500.jpg" class="slide" alt="" />
             </div> <!-- .carousel-image -->
           </div><!-- /.czr-item -->
-        
+
           <div class="czr-item  slide-2213">
             <div class="carousel-image slider-full">
-              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/342eb11a-5439-4d72-a3b3-265ec476405f-1280x500.jpg" class="slide" alt="" />    
+              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/342eb11a-5439-4d72-a3b3-265ec476405f-1280x500.jpg" class="slide" alt="" />
             </div> <!-- .carousel-image -->
           </div><!-- /.czr-item -->
-        
+
           <div class="czr-item  slide-2214">
             <div class="carousel-image slider-full">
-              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/8076ba55-9188-4d7b-b391-af9ae1c67eee-1280x500.jpg" class="slide" alt="" />    
+              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/8076ba55-9188-4d7b-b391-af9ae1c67eee-1280x500.jpg" class="slide" alt="" />
             </div> <!-- .carousel-image -->
           </div><!-- /.czr-item -->
-        
+
           <div class="czr-item  slide-2215">
             <div class="carousel-image slider-full">
-              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/bb78d872-d4df-4dc2-a495-8729bc178c0d-1280x500.jpg" class="slide" alt="" />    
+              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/bb78d872-d4df-4dc2-a495-8729bc178c0d-1280x500.jpg" class="slide" alt="" />
             </div> <!-- .carousel-image -->
           </div><!-- /.czr-item -->
-        
+
           <div class="czr-item  slide-2216">
             <div class="carousel-image slider-full">
-              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/4951b831-8ac3-4e0d-8775-6685b68192ea-1280x500.jpg" class="slide" alt="" />    
+              <img width="1280" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2018/03/4951b831-8ac3-4e0d-8775-6685b68192ea-1280x500.jpg" class="slide" alt="" />
             </div> <!-- .carousel-image -->
           </div><!-- /.czr-item -->
-        
+
           <div class="czr-item  slide-359">
             <div class="carousel-image slider-full">
-              <img width="1231" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2017/10/slider3.jpg" class="slide" alt="" />    
+              <img width="1231" height="500" src="http://ahuacatlanavanza.gob.mx/wp-content/uploads/2017/10/slider3.jpg" class="slide" alt="" />
             </div> <!-- .carousel-image -->
           </div><!-- /.czr-item -->
         </div><!-- /.carousel-inner -->
@@ -513,7 +446,7 @@
         </div>
       </div><!-- /#customizr-slider -->
 */
-?> 
+?>
 
       <div id="main-wrapper" class="container">
         <div class="container marketing">
