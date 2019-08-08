@@ -1,6 +1,8 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css">
-<link rel="stylesheet" type="text/css" href="css/login.css">
-<?php include 'header.php' ?>
+<link rel="stylesheet" type="text/css" href="css/.css">
+<?php
+error_reporting(0); //evita error del menu en el header 
+ include 'header.php' ?>
 </div>
 <?php
      if (isset($_GET["error"]))
