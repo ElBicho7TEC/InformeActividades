@@ -1,8 +1,6 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css">
-<link rel="stylesheet" type="text/css" href="css/.css">
-<?php
-error_reporting(0); //evita error del menu en el header 
- include 'header.php' ?>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<?php include 'header.php' ?>
 </div>
 <?php
      if (isset($_GET["error"]))
@@ -42,11 +40,48 @@ error_reporting(0); //evita error del menu en el header
 	      <form class="Myformulario" action="verificarLogin.php" method="post" enctype="multipart/form-data">
 	          <div class="col-12 form-group">
 	              <label>Correo</label>
-	              <input   type="text" id="correo" name="correo" value="" maxlength="73" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required="" >
+	              <input   
+                  type="text" 
+                  id="correo" 
+                  name="correo" 
+                  value="" 
+                  maxlength="73" 
+                  pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" 
+                  required="" 
+                  style="background-color: white; 
+                        color: black; 
+                        font-weight: bold; 
+                        text-decoration: none;
+                        padding: 7px;
+                        font-size: 15px;
+                        border-radius: 8px;
+                        border: 2px solid #211A1A;
+                        height: 39px;
+                        font-family: Cambria;" 
+                  placeholder="&#128231; ejemplo@x.com" 
+                  size="20">
 	          </div>
 	          <div class="col-12   form-group">
 	              <label>Password</label>
-	              <input type="password" id="pass" name="pass" value="" maxlength="73" required="">
+	              <input 
+                  type="password" 
+                  id="pass" 
+                  name="pass" 
+                  value="" 
+                  maxlength="73" 
+                  required=""
+                  style="background-color: white; 
+                        color: black; 
+                        font-weight: bold;
+                        text-decoration: none;
+                        padding: 7px;
+                        font-size: 15px;
+                        border-radius: 8px;
+                        border: 2px solid #211A1A;
+                        height: 39px;
+                        font-family: Cambria;" 
+                  placeholder="&#128272;  ******" 
+                  size="20">
 
                   <div class="col-12   form-group">
                       <label>Mantener sesión iniciada:</label><br>
