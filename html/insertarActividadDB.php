@@ -36,11 +36,8 @@ $anioCaptura=$fechaCaptura['year']; //año del dia
 
 
 if ($Foto!='') {
-      if (move_uploaded_file($url_temp,$src)) {
-       echo "La foto se ha guardado correctamente";
-   } else {
-       echo "Lo sentimos, la foto no se pudo guardar.";
-   }
+    (move_uploaded_file($url_temp,$src);
+
     }
 
     include 'conexion.php';

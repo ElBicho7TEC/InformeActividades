@@ -6,7 +6,7 @@ include 'header.php';
 ?>
 <body>
   <div class="container">
-  	<form class="Myformulario" method="POST" action="insertarActividadBd.php" enctype='multipart/form-data'>
+  	<form class="Myformulario" method="POST" action="insertarActividadDB.php" enctype='multipart/form-data'>
       <div class="row justify-content-center text-center text-md-left">
   	      <div class="col-md-12">
   	  	     <div class="form-group">
