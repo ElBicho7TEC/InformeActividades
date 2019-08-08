@@ -1,10 +1,9 @@
 <?php
-  function menu()
-  {
    include 'getInfo.php';
    if($idRol==1)
    {
-    echo'               <div class="nav-collapse collapse">
+     ?>
+                <div class="nav-collapse collapse">
                   <div class="menu-menu-principal-container">
                     <ul id="menu-menu-principal-2" class="nav">
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
@@ -53,7 +52,7 @@
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
                             <a href="altaDependencia.php">
-                              Agregar Nueva Dependencia 
+                              Agregar Nueva Dependencia
                             </a>
                           </li>
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2793">
@@ -82,11 +81,13 @@
                        </li>
                     </ul>
                   </div>
-                </div>';  
+                </div>;
+                <?php
    }
-   elseif ($idRol==2) 
+   elseif ($idRol==2)
    {
-       echo'               <div class="nav-collapse collapse">
+      ?>
+                <div class="nav-collapse collapse">
                   <div class="menu-menu-principal-container">
                     <ul id="menu-menu-principal-2" class="nav">
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
@@ -135,7 +136,7 @@
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
                             <a href="altaDependencia.php">
-                              Agregar Nueva Dependencia 
+                              Agregar Nueva Dependencia
                             </a>
                           </li>
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2793">
@@ -152,10 +153,12 @@
                        </li>
                     </ul>
                   </div>
-                </div>'; 
+                </div>;
+                <?php
    }
   elseif ($idRol==3) {
-      echo'               <div class="nav-collapse collapse">
+     ?>
+                <div class="nav-collapse collapse">
                   <div class="menu-menu-principal-container">
                     <ul id="menu-menu-principal-2" class="nav">
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
@@ -199,11 +202,13 @@
                        </li>
                     </ul>
                   </div>
-                </div>'; 
+                </div>;
+  <?php
   }
 elseif($idRol==4)
   {
-    echo'               <div class="nav-collapse collapse">
+     ?>
+              <div class="nav-collapse collapse">
                   <div class="menu-menu-principal-container">
                     <ul id="menu-menu-principal-2" class="nav">
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
@@ -252,7 +257,7 @@ elseif($idRol==4)
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
                             <a href="altaDependencia.php">
-                              Agregar Nueva Dependencia 
+                              Agregar Nueva Dependencia
                             </a>
                           </li>
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2793">
@@ -269,10 +274,12 @@ elseif($idRol==4)
                        </li>
                     </ul>
                   </div>
-                </div>'; 
+                </div>;
+  <?php
   }
   elseif ($idRol="") {
-      echo'               <div class="nav-collapse collapse">
+     ?>
+   <div class="nav-collapse collapse">
                   <div class="menu-menu-principal-container">
                     <ul id="menu-menu-principal-2" class="nav">
                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
@@ -321,7 +328,7 @@ elseif($idRol==4)
                         <ul class="dropdown-menu">
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
                             <a href="altaDependencia.php">
-                              Agregar Nueva Dependencia 
+                              Agregar Nueva Dependencia
                             </a>
                           </li>
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2793">
@@ -338,7 +345,7 @@ elseif($idRol==4)
                        </li>
                     </ul>
                   </div>
-                </div>';
+                </div>;
+<?php
   }
-}
 ?>

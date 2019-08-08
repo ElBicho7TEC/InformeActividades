@@ -2,7 +2,7 @@
 
 <?php
 include 'header.php';
-if (!$_GET || $_GET['pagina']<1) 
+if (!$_GET || $_GET['pagina']<1)
 {
   $_GET['pagina']=1;
 }
@@ -12,10 +12,10 @@ if (!$_GET || $_GET['pagina']<1)
   	<?php
     include 'conexion.php'; //se incluye la conexión
       error_reporting(E_ALL^E_NOTICE);
-    if ($_POST['Bdependencia']!="") 
+    if ($_POST['Bdependencia']!="")
     {
-      $BusquedaDependencia=$_POST['Bdependencia'];	
-      $ConsultaDependencias = $conn->prepare("SELECT * FROM dependencia where nombreDeependencia 
+      $BusquedaDependencia=$_POST['Bdependencia'];
+      $ConsultaDependencias = $conn->prepare("SELECT * FROM dependencia where nombreDeependencia
         like '%$BusquedaDependencia%' ORDER BY idDependencia DESC ");  //se realiza la consulta de las dependencias
       $ConsultaDependencias->execute(); //se ejecuta la consulta
       $ResultadoDependencias = $ConsultaDependencias->fetchAll(); //se obtienen los datos de la consulta
@@ -24,7 +24,7 @@ if (!$_GET || $_GET['pagina']<1)
       $paginas=$totalDependencias_bd/$dependenciasxPagina;
       $paginas=ceil($paginas);
       $iniciar=($_GET['pagina']-1)*$dependenciasxPagina;
-      $ConsultaDependencias2 = $conn->prepare("SELECT * FROM dependencia where nombreDeependencia 
+      $ConsultaDependencias2 = $conn->prepare("SELECT * FROM dependencia where nombreDeependencia
         like '%$BusquedaDependencia%' ORDER BY idDependencia DESC LIMIT :iniciar,:nDependencias");  //se realiza la consulta de las dependencias
       $ConsultaDependencias2->bindParam(':iniciar',$iniciar,PDO::PARAM_INT);
       $ConsultaDependencias2->bindParam(':nDependencias',$dependenciasxPagina,PDO::PARAM_INT);
@@ -46,9 +46,9 @@ if (!$_GET || $_GET['pagina']<1)
       $ConsultaDependencias2->execute(); //se ejecuta la consulta
     }
     $ResultadoDependencias2 = $ConsultaDependencias2->fetchAll(); //se obtienen los datos de la consulta
-    foreach ($ResultadoDependencias2 as $Datos) 
-    { //se recorren los datos 
-      $IdentificadorDependencia=$Datos["idDependencia"]; 
+    foreach ($ResultadoDependencias2 as $Datos)
+    { //se recorren los datos
+      $IdentificadorDependencia=$Datos["idDependencia"];
       $Nombre=$Datos['nombredependencia'];
       $Calle=$Datos['calle'];
       $Numero=$Datos['numero'];
@@ -65,25 +65,25 @@ if (!$_GET || $_GET['pagina']<1)
 					<div class="panel-body text-center"> <!-- se incluye el cuerpo de la tarjeta-->
 						<p class="lead" style="font-size:20px">
               <strong>
-              <?php 
-                echo $Nombre; 
-              ?> 
+              <?php
+                echo $Nombre;
+              ?>
               </strong>
             </p> <!-- nombre de las dependencias-->
 
 					</div>
 					<ul class="list-group list-group-flush text-center"> <!-- se agrupan los datos de las dependencias-->
               <li class="list-group-item"><i class="icon-ok text-danger"></i><b>Nombre:</b>
-              <?php echo $Nombre ?> 
+              <?php echo $Nombre ?>
               </li><!-- Calle y numero de las dependencias-->
 						<li class="list-group-item"><i class="icon-ok text-danger"></i><b>Dirección:</b>
-              <?php echo $Calle ?> 
+              <?php echo $Calle ?>
               #<?php echo$Numero ?>
             </li><!-- Calle y numero de las dependencias-->
 						<li class="list-group-item"><i class="icon-ok text-danger"></i><b>Colonia: </b>
-              <?php echo $Colonia?> 
+              <?php echo $Colonia?>
             </li><!-- Colonia de las dependencias-->
-						<li class="list-group-item"><i class="icon-ok text-danger"></i><b>Codigo Postal:</b> 
+						<li class="list-group-item"><i class="icon-ok text-danger"></i><b>Codigo Postal:</b>
               <?php echo $CodigoPostal; ?>
             </li><!--Codigo Postal de las dependencias-->
 					</ul>
@@ -94,13 +94,13 @@ if (!$_GET || $_GET['pagina']<1)
 					</div>
 				</div>
 		  </div>
-    <?php 
-    } 
+    <?php
+    }
     ?> <!--Cierre del ciclo para que se genere el diseño dependiendo del numero de dependencias en la base de datos-->
   </div>
   <div class="row">
     <div class="col-12" style="height: 20px;">
-         
+
     </div>
     <div class="col-6 col-sm-4">
 
@@ -111,7 +111,7 @@ if (!$_GET || $_GET['pagina']<1)
           <li class="page-item <?php echo $_GET['pagina']<=1 ? 'disabled':'' ?>">
             <a class="page-link" href="indexAdministrador.php?pagina=<?php echo $_GET['pagina']-1 ?>">Anterior</a>
           </li>
-          <?php 
+          <?php
           for($i=0;$i<$paginas;$i++):
           ?>
             <li class="page-item <?php echo $_GET['pagina']==$i+1 ? 'active':'' ?>">
@@ -119,8 +119,8 @@ if (!$_GET || $_GET['pagina']<1)
                 <?php echo $i+1; ?>
               </a>
             </li>
-          <?php 
-          endfor 
+          <?php
+          endfor
           ?>
           <li class="page-item <?php echo $_GET['pagina']>=$paginas ? 'disabled':'' ?>">
             <a class="page-link" href="indexAdministrador.php?pagina=<?php echo $_GET['pagina']+1 ?>">Siguiente</a>
@@ -129,11 +129,11 @@ if (!$_GET || $_GET['pagina']<1)
       </nav>
     </div>
     <div class="col-6 col-sm-4">
-            
-    </div> 
+
+    </div>
   </div>
 </div>
 
-<?php 
+<?php
 include 'footer.php'
 ?>

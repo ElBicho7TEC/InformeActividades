@@ -85,7 +85,7 @@ $stmt->bindParam(2,$ContraEncriptada, PDO::PARAM_STR); //se manda como parametro
 $stmt->bindParam(3,$Nombre, PDO::PARAM_STR);
 $stmt->bindParam(4,$ApellidoP, PDO::PARAM_STR);
 $stmt->bindParam(5,$ApellidoM, PDO::PARAM_STR);
-$stmt->bindParam(6,$Dependencia, PDO::PARAM_STR);
-$stmt->bindParam(7,$Rol, PDO::PARAM_STR);
+$stmt->bindParam(6,$Dependencia, PDO::PARAM_INT);
+$stmt->bindParam(7,$Rol, PDO::PARAM_INT);
 $stmt->execute(); }
 ?>
