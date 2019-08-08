@@ -3,7 +3,7 @@
   		 	<div class="container footer-widgets ">
           <div class="row widget-area" role="complementary">								
 					  <div id="footer_one" class="span4">
-						  <aside id="wpcw_contact-8" class="widget wpcw-widgets wpcw-widget-contact">
+              <aside id="wpcw_contact-8" class="widget wpcw-widgets wpcw-widget-contact">
                 <h3 class="widget-title">
                   Presidencia Municipal
                 </h3>
@@ -44,7 +44,7 @@
                   </li>
                 </ul>
               </aside>
-						</div><!-- .{$key}_widget_class -->						
+            </div><!-- .{$key}_widget_class --> 					
 						
             <div id="footer_two" class="span4">
 							<aside id="nav_menu-5" class="widget widget_nav_menu">
@@ -62,37 +62,55 @@
                     
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-172">
                       <a href="...">
-                        ???
+                        Usuarios
                       </a>
                       
                       <ul class="sub-menu">
 	                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
                           <a href="...">
-                            ???
+                            Agregar nuevo usuario
+                          </a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226">
+                          <a href="...">
+                            Modificar usuario
                           </a>
                         </li>
                       </ul>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327">
                       <a href="...">
-                        ???
+                        Roles
                       </a>
+                      <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
+                          <a href="...">
+                            Agregar nuevo rol
+                          </a>
+                        </li>
+                        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2793">
+                          <a href="...">
+                            Modificar rol
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                   
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-383">
                       <a href="...">
-                        ???
+                        Dependencias
                       </a>
                       <ul class="sub-menu">
 	                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
                           <a href="...">
-                            ???
+                            Agregar nueva dependencia
                           </a>
                         </li>
 	                      
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2793">
                           <a href="...">
-                            ???
+                            Modificar dependencia
                           </a>
                         </li>
                       </ul>
@@ -100,91 +118,32 @@
                     
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384">
                       <a href="...">
-                        ???
+                        Logout
                       </a>
-                    </li>
-                    
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-385">
-                      <a href="...">
-                        ???
-                      </a>
-                      
-                      <ul class="sub-menu">
-	                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1005">
-                          <a href="...">
-                            ???
-                          </a>
-	                        
-                          <ul class="sub-menu">
-		                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1002">
-                              <a href="...">
-                                ???
-                              </a>
-                            </li>
-		                        
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001">
-                              <a href="...">
-                                ???
-                              </a>
-                            </li>
-		                        
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395">
-                              <a href="...">
-                                ???
-                              </a>
-                            </li>
-		                        
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394">
-                              <a href="...">
-                                ???
-                              </a>
-                            </li>
-	                        </ul>
-                        </li>
-	                      
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1009">
-                          <a href="...">
-                            ???
-                          </a>
-	                        
-                          <ul class="sub-menu">
-		                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397">
-                              <a href="...">
-                                ???
-                              </a>
-                            </li>
-		                        
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396">
-                              <a href="...">
-                                ???
-                              </a>
-                            </li>
-	                        </ul>
-                        </li>
-                      </ul>
                     </li>
                   </ul>
                 </div>
               </aside>
-			</div><!-- .{$key}_widget_class -->
-						<div id="footer_three" class="span4">
-							<aside id="search-6" class="widget widget_search">
+			      </div><!-- .{$key}_widget_class -->
+						
+            <div id="footer_three" class="span4">
+              <aside id="search-6" class="widget widget_search">
                 <h3 class="widget-title">
                   Busqueda
                 </h3>
                 <form role="search" method="get" id="searchform" class="searchform" action="http://ahuacatlanavanza.gob.mx/">
-				          <div>
-					          <label class="screen-reader-text" for="s">
+                  <div>
+                    <label class="screen-reader-text" for="s">
                       Buscar:
                     </label>
-					         <input type="text" value="" name="s" id="s" />
-					         <input type="submit" id="searchsubmit" value="Buscar" />
-				          </div>
-			          </form>
+                   <input type="text" value="" name="s" id="s" />
+                   <input type="submit" id="searchsubmit" value="Buscar" />
+                  </div>
+                </form>
               </aside>
-						</div><!-- .{$key}_widget_class -->
-    			</div><!-- .row.widget-area -->
-				</div><!--.footer-widgets -->
+            </div><!-- .{$key}_widget_class -->
+          </div><!-- .row.widget-area -->
+        </div><!--.footer-widgets -->
 				
         <div class="colophon">
 			 	 <div class="container">
