@@ -1,13 +1,11 @@
 <?php
 include 'getInfo.php';
 ?>
-<!DOCTYPE html>
-<html>
 <?php
 include 'header.php';
 ?>
 <body>
-  <div class="container">	
+  <div class="container">
   	<form class="Myformulario" method="POST" action="insertarActividadBd.php" enctype='multipart/form-data'>
       <div class="row justify-content-center text-center text-md-left">
   	      <div class="col-md-12">
@@ -17,6 +15,19 @@ include 'header.php';
   	  	     <div class="form-group">
              <textarea class="form-control" id="descripcion" name="descripcion" rows="3" placeholder="Descripcion de la Actividad" required=""  maxlength="45" pattern="[A-Za-z]+"></textarea>
              </div>
+             <div class="form-group text-center">
+                    <span>Plan de trabajo:</span>
+                <select  id="planTrabajo" name="planTrabajo" required="">
+                 <p></p>
+                 <?php
+                 include 'conexion.php';
+                 $datos = $conn->query('SELECT * FROM plandesarrollo');
+                 while ($valores=$datos->fetch()) {
+                   echo "'<option value= $valores[idplandesarrollo]> $valores[nombreplandesarrollo] </option>'";
+                 }
+                             ?>
+                </select>
+                        </div>
              <div class="form-group">
                    Fecha de realización: <input class="form-control" type="date" id="fecha" name="fecha" style="width: 80%" required="">
              </div>
@@ -39,8 +50,8 @@ include 'header.php';
              	<button type="submit" name="Registro" class="btn btn-primary">Agregar</button>
              </div>
   	      </div>
-  	    </div>  
-  	</form>    
+  	    </div>
+  	</form>
   </div>
 </body>
 <?php

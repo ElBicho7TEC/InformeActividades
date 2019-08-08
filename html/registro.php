@@ -47,7 +47,7 @@
 					  </div>
 					  <div class="form-group text-center">
 				           <span>Dependencia:</span>
-						   <select  id="Dependencia" name="Rol" required="">
+						   <select  id="Dependencia" name="Dependencia" required="">
 						   	<p></p>
 						   	<?php
 						   	include 'conexion.php';
@@ -70,12 +70,14 @@ include 'footer.php';
 if (isset($_POST["Nombre"])) {
 $id=1;
 $Nombre=$_POST["Nombre"];
-$ApellidoP=$_POST["ApellidoP"];     $ApellidoM=$_POST["ApellidoM"];
-$Correo=$_POST["Correo"];  $Contra=$_POST["Contrasena"];
+$ApellidoP=$_POST["ApellidoP"];
+$ApellidoM=$_POST["ApellidoM"];
+$Correo=$_POST["Correo"];
+$Contra=$_POST["Contrasena"];
 include("codificacion.php"); // se incluye el archivo codificacion
 $ContraEncriptada=codificar($Contra);// mandar a llamar la funcion para encriptar la contraseña
-$Dependencia=1;
-$Rol=1;
+$Dependencia=$_POST["Dependencia"];;
+$Rol=$_POST["Rol"];
 include 'conexion.php';
 $stmt=$conn->prepare("call sp_insertar_usuarios(?,?,?,?,?,?,?)");
 $stmt->bindParam(1,$Correo, PDO::PARAM_STR);

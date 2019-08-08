@@ -1,20 +1,12 @@
-<html>
-	<head>
-		<title>Alta Rol</title>
         <?php include 'getInfo.php'; ?>
-
-        <?php
-		include 'header.php'; 
-	?>
-	</head>	
-	<body>
+        <?php include 'header.php'; ?>
 	<div class="header-bottom">
 		<div class="container">
 			<div class="row justify-content-center text-center text-md-left">
 				<div class="col-12">
 				</div>
 			</div>
-		</div>			
+		</div>
 		<div class="container">
 			<div class="row justify-content-center text-center text-md-left">
 				<div class="col-12 col-md-4 mt-5 mt-md-10">
