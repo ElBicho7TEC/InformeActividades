@@ -1,4 +1,7 @@
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_Modificar_Actividades`(
+#Procedimiento Almacenado para modificar actividades
+
+DELIMITER //
+CREATE  PROCEDURE `sp_modificar_actividades`(
 	in idActividad INT,
 	in nombre_Actividad VARCHAR(500),
 	in descripcion VARCHAR(500),
@@ -23,3 +26,5 @@ BEGIN
     idplanDesarrollo=idplanDesarrollo
     WHERE idActividad = idActividad;
 END
+//
+DELIMITER ;

@@ -1,5 +1,5 @@
 <?php include 'header.php' ?>
-		<div class="container"> 
+		<div class="container">
 			<div class="row justify-content-center text-center text-md-left">
 				<div class="col-12 " >
 					<form  class="Myformulario" method='POST' >
@@ -36,8 +36,8 @@
 					       <span>Rol:</span>
 						   <select  id="Rol" name="Rol" required="">
 						   	<p></p>
-						   	<?php  
-						   	include 'Conexion.php';
+						   	<?php
+						   	include 'conexion.php';
 						   	$datos = $conn->query('SELECT * FROM rol');
 						   	while ($valores=$datos->fetch()) {
 						   		echo "'<option value= $valores[idrol]> $valores[tiporol] </option>'";
@@ -47,10 +47,10 @@
 					  </div>
 					  <div class="form-group text-center">
 				           <span>Dependencia:</span>
-						   <select  id="Dependencia" name="Rol" required="">
+						   <select  id="Dependencia" name="Dependencia" required="">
 						   	<p></p>
-						   	<?php  
-						   	include 'Conexion.php';
+						   	<?php
+						   	include 'conexion.php';
 						   	$datos = $conn->query('SELECT * FROM dependencia');
 						   	while ($valores=$datos->fetch()) {
 						   		echo "'<option value= $valores[iddependencia]> $valores[nombredependencia] </option>'";
@@ -65,21 +65,23 @@
     			 </div>
     	    </div>
 		</div>
-<?php 
-include 'footer.php'; 
+<?php
+include 'footer.php';
 if (isset($_POST["Nombre"])) {
 $id=1;
 $Nombre=$_POST["Nombre"];
-$ApellidoP=$_POST["ApellidoP"];     $ApellidoM=$_POST["ApellidoM"];
-$Correo=$_POST["Correo"];  $Contra=$_POST["Contrasena"];
+$ApellidoP=$_POST["ApellidoP"];
+$ApellidoM=$_POST["ApellidoM"];
+$Correo=$_POST["Correo"];
+$Contra=$_POST["Contrasena"];
 include("codificacion.php"); // se incluye el archivo codificacion
 $ContraEncriptada=codificar($Contra);// mandar a llamar la funcion para encriptar la contraseña
-$Dependencia=1;
-$Rol=1;
+$Dependencia=$_POST["Dependencia"];;
+$Rol=$_POST["Rol"];
 include 'conexion.php';
-$stmt=$conn->prepare("call sp_Insertar_Usuarios(?,?,?,?,?,?,?)");
+$stmt=$conn->prepare("call sp_insertar_usuarios(?,?,?,?,?,?,?)");
 $stmt->bindParam(1,$Correo, PDO::PARAM_STR);
-$stmt->bindParam(2,$ContraEncriptada, PDO::PARAM_STR); //se manda como parametro la contraseña encriptada 
+$stmt->bindParam(2,$ContraEncriptada, PDO::PARAM_STR); //se manda como parametro la contraseña encriptada
 $stmt->bindParam(3,$Nombre, PDO::PARAM_STR);
 $stmt->bindParam(4,$ApellidoP, PDO::PARAM_STR);
 $stmt->bindParam(5,$ApellidoM, PDO::PARAM_STR);

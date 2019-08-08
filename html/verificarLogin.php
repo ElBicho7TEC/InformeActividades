@@ -34,9 +34,21 @@ if($totalUsuarios>0){
 		if ($_POST ['mantener']=="no"){
 			setcookie($cookie_name, $cookie_value, 0, "/");//opción por default, la cookie se borra al cerrar el navegador
 		  }
-		header("Location: index.php?status=1");//Manda al usuario a la página principal del sitio, con estado 1 (sesión iniciada)
+		if ($idRol==1)
+		{
+		header("Location: indexAdministrador.php");//Manda al usuario a la página principal del sitio, con estado 1 (sesión iniciada)
+	    }
+	    elseif ($idRol==2) {
+	    header("Location: indexContraloria.php");
+	    }
+	    elseif ($idRol==3) {
+	    header("Location: indexDirecciones.php");
+	    }
+	    else
+	    {
+	    header("Location:indexRegidores.php");	
+	    }
 	}else{
-		echo "Contraseña incorrecta";
 		header("Location: login.php?error=2");//Regresa al usuario al login con el índice de error que indica contraseña incorrecta
 	}
 }else{

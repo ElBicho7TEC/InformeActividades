@@ -1,4 +1,8 @@
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_Insertar_Usuarios`(
+#Procedimiento Almacenado para insertar Usuario
+
+
+DELIMITER //
+  CREATE PROCEDURE sp_insertar_usuarios(
   in correoElectronico VARCHAR(45),
   in contraseña VARCHAR(45),
   in Nombre VARCHAR(45),
@@ -11,3 +15,5 @@ BEGIN
 	insert into usuarios values (null, correoElectronico, contraseña, Nombre,
     apellidoPaterno, apellidoMaterno, idDependencia, idRol);
 END
+//
+DELIMITER ;

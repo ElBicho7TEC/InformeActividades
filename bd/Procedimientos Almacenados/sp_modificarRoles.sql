@@ -1,15 +1,9 @@
 #Procedimiento almacenado para modificar Roles
+
 DELIMITER //
-create procedure sp_modificarRoles(var_idRol INT,var_tipoRol VARCHAR(45))
-begin
-UPDATE rol SET tipoRol=var_tipoRol WHERE idRol = var_idRol;
-end
-;
+CREATE  PROCEDURE sp_modificarrol (var_idrol int,var_tiporol varchar(45))
+BEGIN 
+UPDATE rol SET tiporol=var_tiporol WHERE idrol = var_idrol;
+END
 //
 DELIMITER ;
-
-
-
-
-
-

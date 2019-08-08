@@ -1,20 +1,19 @@
-
 <?php include 'getInfo.php'; ?>
 <html>
 	<head>
 		<title>Listado de Usuarios</title>
 			<?php include 'header.php'; ?>
 	</head>
-	
+
 	<body>
 	<div class="header-bottom">
-	
+
 	<div class="container">
-	<div class="row justify-content-center text-center text-md-left">				
+	<div class="row justify-content-center text-center text-md-left">
 			</div>
 	</div>
 	</div>
-	
+
 	<div class="container mb-2">
 		<h1 class="text-center">Listado de Usuarios</h1>
 	<div class="row">
@@ -25,7 +24,7 @@ include("conexion.php");
     $gsent = $conn->prepare($cadena);
     $gsent->execute();
     while ($resultado = $gsent->fetch(PDO::FETCH_ASSOC)) {
-		
+
 		$idUsuario=$resultado['idusuario'];
     $Correo=$resultado['correoelectronico'];
     $Nombre=$resultado['nombre'];
@@ -50,7 +49,7 @@ include("conexion.php");
 </div>
 </div>
 <?php } ?>
-			
+
 		</div>
 	</div>
 	<div class="container">

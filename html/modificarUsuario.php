@@ -1,5 +1,5 @@
 <?php include 'getInfo.php'; ?>
-<?php include 'Decodificacion.php';?>
+<?php include 'decodificacion.php';?>
 <?php if(isset($_GET["idUsuario"]))
  {//Cambiar por POST a futuro
     $id=$_GET["idUsuario"];
@@ -16,7 +16,7 @@
     $ContraDecencriptada=decodificar($Contrasena);
  }
 else
- {//Si no se manda ID, entonces mandar a la de alta de dependencia
+ {//Si no se manda ID, entonces mandar al listado  de usuarios
 	header("Location: listadoUsuarios.php");
  }
  ?>
@@ -26,18 +26,18 @@ else
 		<title>Moficiar Usuarios</title>
 			<?php include 'header.php'; ?>
 	</head>
-	
+
 	<body>
 	<div class="header-bottom">
-	
+
 	<div class="container">
 	<div class="row justify-content-center text-center text-md-left">
 				</div>
-				
+
 			</div>
 	</div>
 	</div>
-	
+
 	<div class="container">
 		<h1 class="text-center">Modificar Usuario</h1>
 		<div class="col-12" >
@@ -57,7 +57,7 @@ else
 					<input class="btn btn-info" type="submit" id="Guardar" name="Guardar" value="Modificar">
 				</div>
 			</form>
-			
+
 		</div>
 	</div>
 	<div class="container">
