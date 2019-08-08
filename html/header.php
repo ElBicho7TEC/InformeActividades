@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es-ES">
   <head>
- <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Anton|Dosis:400,800" rel="stylesheet">
-      <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Dosis:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);
 
     </script>
@@ -439,6 +439,8 @@
         
       </div>    
 
+<?php //Esta lina de código de php solo la puse para poder comentar con /*
+/*
       <div id="customizr-slider-1" class="carousel customizr-slide sliderfinal parallax-wrapper">
         <div id="tc-slider-loader-wrapper-1" class="tc-slider-loader-wrapper">
           <div class="tc-img-gif-loader">
@@ -510,6 +512,8 @@
           </a>
         </div>
       </div><!-- /#customizr-slider -->
+*/
+?> 
 
       <div id="main-wrapper" class="container">
         <div class="container marketing">
