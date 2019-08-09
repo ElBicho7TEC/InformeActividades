@@ -5,12 +5,19 @@ include 'getInfo.php';
 $Foto=$_FILES["foto"];//se obtiene el archivo de la fotografia
 $NFoto=$Foto['name']; //se obtiene el nombre
 $type =$Foto['type']; //se obtiene el tipo
+$ext = pathinfo($NFoto, PATHINFO_EXTENSION);//se obtiene la extension
+$allowed =  array('jpeg','png' ,'jpg');//Extensiones permitidas
+
+if(!in_array($ext,$allowed) ) {//Checamos de una vez las extensiones permitidas
+ header("Location: insertarActividad.php?errorValidacion=1");//Si no son de las extensiones permitidas, que regrese al usuario.
+}
+else{
 $url_temp=$Foto['tmp_name']; //se obtiene la direccion que le otoga temporalmente
   if($NFoto !='')
   {
     $destino='imagenes/'; //ruta que debe cambiar a la del servidor
     $imgnombre='img_'.md5(date('d-m-Y H:m:s')); //se encripta el nombre con md5 y la fecha de captura
-    $imgProducto=$imgnombre.'.jpg'; //se guarda omo jpg
+    $imgProducto=$imgnombre.".".$ext; //se guarda con la extension que tuvo
     $src =$destino.$imgProducto; //se obtiene la ruta de la imagen que se guardara en la base de datos
   }
 /* se obtienen los datos del formulario */
@@ -66,4 +73,5 @@ if ($Foto!='') {
    $stmt->execute();
 
  header("Location: insertarActividad.php");
+ }
 ?>
