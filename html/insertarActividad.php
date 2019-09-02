@@ -43,8 +43,12 @@ include 'header.php';
                </select>
   	  	     </div>
   	         <div class="form-group">
-                Seleciona la imagen de la actividad
-                <input type="file" class="form-control-file" id="foto" name="foto" accept="image/*" required="">
+               <?php if (isset($_GET['errorValidacion'])) { ?>
+                Por favor elige un formato valido
+              <?php }else { ?>
+                  Seleciona la imagen de la actividad
+                <?php } ?>
+                <input type="file" class="form-control-file" id="foto" name="foto" accept="image/png, .jpeg, .jpg," required="">
              </div>
              <div class="form-group">
              	<button type="submit" name="Registro" class="btn btn-primary">Agregar</button>

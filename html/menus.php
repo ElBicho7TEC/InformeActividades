@@ -1,5 +1,5 @@
 <?php
-   include 'getInfo.php';
+    include 'getInfo.php';
    if($idRol==1)
    {
      ?>
@@ -70,6 +70,26 @@
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
                             <a href="insertarPlanDesarrollo.php">
                               Agregar Nuevo Plan de desarrollo
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-383">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+                        Registros
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
+                            <a href="registroDependencias.php">
+                              Dependencias
+                            </a>
+                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
+                            <a href="registroUsuario.php">
+                              Usuarios
+                            </a>
+                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261">
+                            <a href="registroRoles.php">
+                              Roles
                             </a>
                           </li>
                         </ul>

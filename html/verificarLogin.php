@@ -46,7 +46,7 @@ if($totalUsuarios>0){
 	    }
 	    else
 	    {
-	    header("Location:indexRegidores.php");	
+	    header("Location:indexRegidores.php");
 	    }
 	}else{
 		header("Location: login.php?error=2");//Regresa al usuario al login con el índice de error que indica contraseña incorrecta

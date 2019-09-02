@@ -347,6 +347,7 @@
                   </div>
                 </div>
 
+<<<<<<< HEAD
                 <div class="nav-collapse collapse">
                   <div class="menu-menu-principal-container">
                     <ul id="menu-menu-principal-2" class="nav">
@@ -416,6 +417,10 @@
                   </div>
                 </div>
                 
+=======
+                <?php include 'menus.php' ?>
+
+>>>>>>> 8ccb1889faaa4f31846782f3c67a82bf129ba39f
                 <div class="btn-toggle-nav pull-right">
                   <button type="button" class="btn menu-btn" data-toggle="collapse" data-target=".nav-collapse" title="Abrir el menú" aria-label="Abrir el menú">
                     <span class="icon-bar">

@@ -1,3 +1,26 @@
+<?php if (isset($_POST["Nombre"])) {
+$id=1;
+$Nombre=$_POST["Nombre"];
+$ApellidoP=$_POST["ApellidoP"];
+$ApellidoM=$_POST["ApellidoM"];
+$Correo=$_POST["Correo"];
+$Contra=$_POST["Contrasena"];
+include("codificacion.php"); // se incluye el archivo codificacion
+$ContraEncriptada=codificar($Contra);// mandar a llamar la funcion para encriptar la contraseña
+$Dependencia=$_POST["Dependencia"];
+$Rol=$_POST["Rol"];
+include 'conexion.php';
+$stmt=$conn->prepare("call sp_insertar_usuarios(?,?,?,?,?,?,?)");
+$stmt->bindParam(1,$Correo, PDO::PARAM_STR);
+$stmt->bindParam(2,$ContraEncriptada, PDO::PARAM_STR); //se manda como parametro la contraseña encriptada
+$stmt->bindParam(3,$Nombre, PDO::PARAM_STR);
+$stmt->bindParam(4,$ApellidoP, PDO::PARAM_STR);
+$stmt->bindParam(5,$ApellidoM, PDO::PARAM_STR);
+$stmt->bindParam(6,$Dependencia, PDO::PARAM_INT);
+$stmt->bindParam(7,$Rol, PDO::PARAM_INT);
+$stmt->execute();
+}
+?>
 <?php include 'header.php' ?>
 		<div class="container">
 			<div class="row justify-content-center text-center text-md-left">
@@ -67,25 +90,4 @@
 		</div>
 <?php
 include 'footer.php';
-if (isset($_POST["Nombre"])) {
-$id=1;
-$Nombre=$_POST["Nombre"];
-$ApellidoP=$_POST["ApellidoP"];
-$ApellidoM=$_POST["ApellidoM"];
-$Correo=$_POST["Correo"];
-$Contra=$_POST["Contrasena"];
-include("codificacion.php"); // se incluye el archivo codificacion
-$ContraEncriptada=codificar($Contra);// mandar a llamar la funcion para encriptar la contraseña
-$Dependencia=$_POST["Dependencia"];;
-$Rol=$_POST["Rol"];
-include 'conexion.php';
-$stmt=$conn->prepare("call sp_insertar_usuarios(?,?,?,?,?,?,?)");
-$stmt->bindParam(1,$Correo, PDO::PARAM_STR);
-$stmt->bindParam(2,$ContraEncriptada, PDO::PARAM_STR); //se manda como parametro la contraseña encriptada
-$stmt->bindParam(3,$Nombre, PDO::PARAM_STR);
-$stmt->bindParam(4,$ApellidoP, PDO::PARAM_STR);
-$stmt->bindParam(5,$ApellidoM, PDO::PARAM_STR);
-$stmt->bindParam(6,$Dependencia, PDO::PARAM_INT);
-$stmt->bindParam(7,$Rol, PDO::PARAM_INT);
-$stmt->execute(); }
 ?>

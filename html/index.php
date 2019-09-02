@@ -1,5 +1,5 @@
+<?php include 'getInfo.php'; ?>
 <?php
-    include 'getInfo.php';
   include 'header.php';
   ?>
 
@@ -18,9 +18,9 @@
                 Login exitoso. ¡Bienvenido!. Está loggeado como: <?php echo $Nombre //la información de la BD se llama a traves del nombre de la variable en la clase getInfo?>
               </div>
             </div>
-          
-      <?php 
-          } 
+
+      <?php
+          }
         }
       ?>
       <div class="col-12 col-md-4 mt-4 mt-md-0">
@@ -28,6 +28,6 @@
       </div>
     </div>
   </div>
-<?php 
-  include 'footer.php' 
+<?php
+  include 'footer.php'
 ?>
