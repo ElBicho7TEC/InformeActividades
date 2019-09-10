@@ -173,7 +173,7 @@
                        </li>
                     </ul>
                   </div>
-                </div>;
+                </div>
                 <?php
    }
   elseif ($idRol==3) {
@@ -222,7 +222,7 @@
                        </li>
                     </ul>
                   </div>
-                </div>;
+                </div>
   <?php
   }
 elseif($idRol==4)
@@ -294,7 +294,7 @@ elseif($idRol==4)
                        </li>
                     </ul>
                   </div>
-                </div>;
+                </div>
   <?php
   }
   elseif ($idRol="") {
@@ -365,7 +365,7 @@ elseif($idRol==4)
                        </li>
                     </ul>
                   </div>
-                </div>;
+                </div>
 <?php
   }
 ?>
