@@ -101,7 +101,7 @@
                        </li>
                     </ul>
                   </div>
-                </div>;
+                </div>
                 <?php
    }
    elseif ($idRol==2)
