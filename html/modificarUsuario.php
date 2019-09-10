@@ -22,11 +22,9 @@ else
  }
  ?>
 
-<html>
-	<head>
-		<title>Moficiar Usuarios</title>
+
 			<?php include 'header.php'; ?>
-	</head>
+
 
 	<body>
 	<div class="header-bottom">

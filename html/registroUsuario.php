@@ -1,10 +1,8 @@
 <?php $tituloPagina="Registrar Usuario" ?>
 <?php include 'getInfo.php'; ?>
-<html>
-	<head>
-		<title>Usuarios Existentes</title>
+
 		<?php include 'header.php'; ?>
-	</head>
+
 
 	<body>
 		<div class="header-bottom">
