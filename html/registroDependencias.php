@@ -1,11 +1,8 @@
+<?php $tituloPagina="Registro de dependencias" ?>
 <?php include 'getInfo.php'; ?>
-<html>
-	<head>
-		<title>
-			Dependencias Existentes
-		</title>
+
 		<?php include 'header.php'; ?>
-	</head>
+
 
 	<body>
 		<div class="header-bottom">
@@ -23,11 +20,11 @@
 					  <td>
 					  	<strong>Dependencia</strong>
 					  </td>
-					 
+
 					  <td>
 					  	<strong>Calle</strong>
 					  </td>
-						  
+
 					  <td>
 					  	<strong>Colonia</strong>
 					  </td>
@@ -51,7 +48,7 @@
 				  	$cadena='SELECT *FROM dependencia';
 				    $gsent = $conn->prepare($cadena);
 				    $gsent->execute();
-				    while ($resultado = $gsent->fetch(PDO::FETCH_ASSOC)) 
+				    while ($resultado = $gsent->fetch(PDO::FETCH_ASSOC))
 				    {
 					    $nombreDeependencia=$resultado['nombredependencia'];
 					    $calle=$resultado['calle'];
@@ -63,26 +60,26 @@
 
 					<tr>
 						<td>
-					  		<?php echo $nombreDeependencia ?> 
+					  		<?php echo $nombreDeependencia ?>
 						</td>
 					  	<td>
-							<?php  echo   $calle ?> 
+							<?php  echo   $calle ?>
 					  	</td>
 						<td>
 					  		#<?php echo  $numero  ?>
 						</td>
 					  	<td>
-							<?php  echo   $colonia ?> 
+							<?php  echo   $colonia ?>
 						</td>
 						<td>
-							<?php  echo   $codigoPostal ?> 
+							<?php  echo   $codigoPostal ?>
 						</td>
 						<td>
 							Entre <?php  echo   $entreCalles ?>
 						</td>
-					</tr>			
-					<?php 
-					} 
+					</tr>
+					<?php
+					}
 					?>
 				</table>
 			</div>

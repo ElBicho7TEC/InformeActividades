@@ -1,18 +1,17 @@
+<?php $tituloPagina="Dependencia" ?>
 <?php
 include 'getInfo.php';
 ?>
 <?php
 include 'header.php';
 ?>
-<html>
-  <head>
-  </head>
+
     <body>
     <?php
      include 'conexion.php';
     ?>
     </body>
-</html>
+
 <?php
 include 'footer.php'
 ?>

@@ -1,3 +1,4 @@
+<?php $tituloPagina="Insertar Plan de desarrollo" ?>
 <?php include 'getInfo.php'; ?>
 <?php include 'header.php'; ?>
 		<form action ="insertarPlanDesarrolloDB.php" method="post" align="center" >

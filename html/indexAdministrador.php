@@ -1,10 +1,8 @@
+<?php $tituloPagina="Administrador" ?>
 <?php include 'getInfo.php'; ?>
-<html>
-<head>
-    <title>Usuarios Existentes</title>
 
     <?php include 'header.php'; ?>
-</head>
+
 
 <body>
 
@@ -95,12 +93,4 @@
         </table>
     </div>
 </div>
-<div class="container">
-    <div class="footer" style="color:#fff; background:#34495E;">
-        <p style="text-align: center;">
-            © 2019 Copyright: Ahuacatlán, Nayarit.
-        </p>
-    </div>
-</div>
-</body>
-</html>
+<?php include footer.php ?>

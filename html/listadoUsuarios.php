@@ -1,9 +1,8 @@
+<?php $tituloPagina="Listado de Usuarios" ?>
 <?php include 'getInfo.php'; ?>
-<html>
-	<head>
-		<title>Listado de Usuarios</title>
+
 			<?php include 'header.php'; ?>
-	</head>
+
 
 	<body>
 	<div class="header-bottom">

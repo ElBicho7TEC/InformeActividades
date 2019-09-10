@@ -1,3 +1,4 @@
+<?php $tituloPagina="Insertar Actividad" ?>
 <?php
 include 'getInfo.php';
 ?>

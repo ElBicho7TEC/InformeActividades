@@ -1,9 +1,7 @@
-<html>
-	<head>
-		<title>Alta Dependencia</title>
+				<?php $tituloPagina="Alta de dependencia" ?>
         <?php include 'getInfo.php'; ?>
         <?php include 'header.php'; ?>
-	</head>
+
 	<body>
 	<div class="container">
 		<div class="row justify-content-center text-center text-md-left" >
@@ -28,7 +26,7 @@
 					<input class="btn btn-info" type="submit" id="Guardar" name="Guardar" value="Dar de Alta">
 				</div>
 			</form>
-			
+
 		</div>
 	</div>
 </div>

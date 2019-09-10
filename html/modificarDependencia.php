@@ -1,3 +1,4 @@
+<?php $tituloPagina="Modificar Dependencia" ?>
 <?php include 'getInfo.php'; ?>
 <?php if(isset($_GET["idDependencia"]))
  {//Cambiar por POST a futuro
@@ -22,11 +23,9 @@ else
  }
  ?>
 
-<html>
-	<head>
-		<title>Moficiar Dependencia</title>
+
 			<?php include 'header.php'; ?>
-	</head>
+
 
 	<body>
 	<div class="header-bottom">

@@ -1,3 +1,4 @@
+<?php $tituloPagina="Contraloria" ?>
 <?php include 'getInfo.php'; ?>
 <?php
 include 'header.php';

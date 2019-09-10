@@ -1,3 +1,4 @@
+<?php $tituloPagina="Modificar Usuario" ?>
 <?php include 'getInfo.php'; ?>
 <?php include 'decodificacion.php';?>
 <?php if(isset($_GET["idUsuario"]))

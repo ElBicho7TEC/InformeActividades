@@ -1,11 +1,9 @@
+
 <?php
+$tituloPagina="Generar Informe";
 include 'getInfo.php';
-?>
-<!DOCTYPE html>
-<html>
-<?php
 include 'header.php';
-include 'getInfo.php';
+
 ?>
 <body>
   <div class="container">

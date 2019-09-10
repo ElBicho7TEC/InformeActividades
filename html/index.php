@@ -1,3 +1,4 @@
+<?php $tituloPagina="Principal" ?>
 <?php include 'getInfo.php'; ?>
 <?php
   include 'header.php';

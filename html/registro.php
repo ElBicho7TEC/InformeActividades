@@ -1,3 +1,4 @@
+<?php $tituloPagina="Registro" ?>
 <?php if (isset($_POST["Nombre"])) {
 $id=1;
 $Nombre=$_POST["Nombre"];

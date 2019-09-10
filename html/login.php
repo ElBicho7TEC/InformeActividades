@@ -1,4 +1,5 @@
-<?php $hastaAqui=1?>
+<?php $tituloPagina="XLI Ayuntamiento de Ahuacatlán Nayarit  - Gobierno que Construye, Municipio que Avanza" ?>
+<?php $hastaAqui=1  //Esta variable es para evitar que se cicle el direccionamiento de paginas, siendo esta la ultima a la que llega ?>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
 <?php include 'header.php' ?>

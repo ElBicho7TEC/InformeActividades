@@ -1,3 +1,4 @@
+<?php $tituloPagina="Registrar Usuario" ?>
 <?php include 'getInfo.php'; ?>
 <html>
 	<head>
@@ -12,7 +13,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<div class="container mb-2">
 			<h1 class="text-center">
 				Usuarios Existentes
@@ -24,11 +25,11 @@
 					  <td>
 					  	<strong>Nombre(s)</strong>
 					  </td>
-					  
+
 					  <td>
 					  	<strong>Apellido Paterno</strong>
 					  </td>
-					  
+
 					  <td>
 					  	<strong>Apellido Materno</strong>
 					  </td>
@@ -45,20 +46,20 @@
 	  				$cadena='SELECT *FROM usuarios';
 	    			$gsent = $conn->prepare($cadena);
 	    			$gsent->execute();
-	    			while ($resultado = $gsent->fetch(PDO::FETCH_ASSOC)) 
+	    			while ($resultado = $gsent->fetch(PDO::FETCH_ASSOC))
 	    			{
 					    $Correo=$resultado['correoelectronico'];
 					    $Nombre=$resultado['nombre'];
 					    $Apellidopat=$resultado['apellidopaterno'];
 					    $Apellidomat=$resultado['apellidomaterno'];
 					?>
-					
+
 						<tr>
 							<td>
 						  		<?php  echo   $Nombre ?>
 						  	</td>
 						  	<td>
-						  		<?php  echo   $Apellidopat ?> 
+						  		<?php  echo   $Apellidopat ?>
 						  	</td>
 						  	<td>
 						  		<?php  echo   $Apellidomat ?>
@@ -67,15 +68,15 @@
 						  		<?php echo $Correo ?>
 						 	</td>
 						</tr>
-					<?php 
-					} 
+					<?php
+					}
 					?>
 				</table>
 			</div>
 		</div>
 		<div class="container">
 			<div class="footer" style="color:#fff; background:#34495E;">
-				<p style="text-align: center;"> 
+				<p style="text-align: center;">
 					© 2019 Copyright: Ahuacatlán, Nayarit.
 				</p>
 			</div>

@@ -1,9 +1,8 @@
+<?php $tituloPagina="Listado de Dependencias" ?>
 <?php include 'getInfo.php'; ?>
-<html>
-	<head>
-		<title>Listado de Dependencias</title>
+
 			<?php include 'header.php'; ?>
-	</head>
+
 
 	<body>
 	<div class="header-bottom">

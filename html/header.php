@@ -11,7 +11,9 @@
 
     </script>
 
-    <title>XLI Ayuntamiento de Ahuacatlán Nayarit  &#8211; Gobierno que Construye, Municipio que Avanza </title>
+    <title><?php echo $tituloPagina //esta variable se pone al inicio de cada pagina
+
+     ?> </title>
 
     <link rel='dns-prefetch' href='//www.google.com' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />

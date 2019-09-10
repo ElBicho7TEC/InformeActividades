@@ -1,11 +1,8 @@
+<?php $tituloPagina="Registro de Roles" ?>
 <?php include 'getInfo.php'; ?>
-<html>
-	<head>
-		<title>
-			Roles Existentes
-		</title>
+
 		<?php include 'header.php'; ?>
-	</head>
+
 
 	<body>
 		<div class="header-bottom">
@@ -32,7 +29,7 @@
 		  			$cadena='SELECT *FROM rol';
 				    $gsent = $conn->prepare($cadena);
 				    $gsent->execute();
-				    while ($resultado = $gsent->fetch(PDO::FETCH_ASSOC)) 
+				    while ($resultado = $gsent->fetch(PDO::FETCH_ASSOC))
 				    {
 				    	$tiporol=$resultado['tiporol'];
 
@@ -40,13 +37,13 @@
 
 					<tr>
 						<td>
-					 		<?php echo $tiporol ?> 
+					 		<?php echo $tiporol ?>
 					  	</td>
 					</tr>
-					
+
 				</div>
-					<?php 
-					} 
+					<?php
+					}
 					?>
 				</table>
 		</div>

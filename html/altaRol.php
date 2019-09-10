@@ -1,3 +1,4 @@
+  <?php $tituloPagina="Alta de Rol" ?>
         <?php include 'getInfo.php'; ?>
         <?php include 'header.php'; ?>
 	<div class="header-bottom">
