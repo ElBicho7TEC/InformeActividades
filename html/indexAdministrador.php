@@ -59,7 +59,7 @@
 
             <?php
             include("conexion.php");
-
+            //consulta
             $cadena='select i.idInforme, i.fecha, p.nombreplandesarrollo, CONCAT(u.nombre, \' \', u.apellidopaterno) as nombrecompleto, d.nombredependencia from informe i, usuarios u, plandesarrollo p, dependencia d where u.idusuario=i.idusuario and p.idplandesarrollo=i.idplandesarrollo and u.iddependencia=d.iddependencia ORDER BY i.idInforme DESC;';
             $gsent = $conn->prepare($cadena);
             $gsent->execute();
