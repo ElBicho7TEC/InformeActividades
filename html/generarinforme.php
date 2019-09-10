@@ -14,8 +14,27 @@ include 'header.php';
           !!Gracias!!
           </div>
       </div>
+
       <div class="row justify-content-center text-center text-md-left">
+
           <div class="col-md-6">
+
+
+            <div class="row">
+            <div class="col-3">
+          <b>  <?php echo "ID"; ?></b>
+            </div>
+            <div class="col-3">
+            <b> <?php echo "Actividad"; ?></b>
+            </div>
+            <div class="col-3">
+            <b> <?php echo "Fecha"; ?></b>
+            </div>
+            <div class="col-3">
+            <b> <?php echo "Seleccionar "; ?></b>
+            </div>
+            </div>
+
           <?php
             include 'conexion.php'; //se incluye la conexión
             $idUsuarios;
@@ -30,7 +49,7 @@ include 'header.php';
                   $dia=$Datos['fechadia'];
                   $mes=$Datos['fechames'];
           ?>
-            <div class="row">
+                <div class="row">
                <div class="col-3">
                 #<?php echo $identificador; ?>
                </div>

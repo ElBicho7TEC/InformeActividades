@@ -1,4 +1,4 @@
-<?php $tituloPagina="Registrar Usuario" ?>
+<?php $tituloPagina="Registro de Usuarios" ?>
 <?php include 'getInfo.php'; ?>
 
 		<?php include 'header.php'; ?>
