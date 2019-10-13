@@ -13,25 +13,45 @@
     </div>
 </div>
 
-<div class="container mb-2">
-    <h1 class="text-center">
-        Actividad
-    </h1>
+
+<div class="col-12 text-center  ">
     <b>Busqueda por dependencia:</b>
-    <!--<div class="row-fluid">
-        <div class="form-group text-center">
-            <span>Dependencia:</span>
-            <select  id="Dependencia" name="Dependencia" required="">
-                <p></p>
-                <?php
+  <form action="indexAdministrador.php"  method="post"  enctype="multipart/form-data">
+    <!-- Tipo -->
+    <div class="form-group">
+ 
+        <select name="dependencia" id="dependencia">
+    <?php
+
+
+    
                 include 'conexion.php';
                 $datos = $conn->query('SELECT * FROM dependencia');
                 while ($valores=$datos->fetch()) {
                     echo "'<option value= $valores[iddependencia]> $valores[nombredependencia] </option>'";
                 }
                 ?>
-            </select>
-        </div>-->
+
+
+
+  
+    </select>
+    <input type="submit" id="Guardar" name="Buscar" value="Buscar">
+    </div>
+    <!-- Fin del tipo -->
+
+  </form>
+</div>
+
+
+
+<form class="Myformulario"enctype='multipart/form-data' method="POST" action="generarinformeAdminDB.php">
+<div class="container mb-2">
+    <h1 class="text-center">
+        Informes
+    </h1>
+
+
         <table>
             <tr>
                 <td>
@@ -42,9 +62,7 @@
                     <strong>Fecha</strong>
                 </td>
 
-                <td>
-                    <strong>Plan de Desarrollo</strong>
-                </td>
+             
 
                 <td>
                     <strong>Elaboró</strong>
@@ -52,45 +70,78 @@
                 <td>
                     <strong>Dependencia</strong>
                 </td>
+				<td>
+                    <strong>Seleccionar</strong>
+                </td>
+			
             </tr>
+
+
 
 
             <?php
             include("conexion.php");
             //consulta
-            $cadena='select i.idInforme, i.fecha, p.nombreplandesarrollo, CONCAT(u.nombre, \' \', u.apellidopaterno) as nombrecompleto, d.nombredependencia from informe i, usuarios u, plandesarrollo p, dependencia d where u.idusuario=i.idusuario and p.idplandesarrollo=i.idplandesarrollo and u.iddependencia=d.iddependencia ORDER BY i.idInforme DESC;';
-            $gsent = $conn->prepare($cadena);
+            $cadena='select DISTINCT  informe.idinforme, informe.fecha,
+			concat(usuarios.nombre , " " ,  usuarios.apellidopaterno , " "  , usuarios.apellidomaterno) as nombrecompleto,
+			dependencia.nombredependencia
+			from informe inner join usuarios inner join dependencia inner join historial_informe inner join actividad' ;
+            
+			
+			//where general
+			$cadena = $cadena. " WHERE actividad.idactividad=historial_informe.idactividad  and  usuarios.iddependencia=actividad.iddependencia
+			and dependencia.iddependencia=actividad.iddependencia and historial_informe.idinforme=informe.idinforme and informe.idusuario=usuarios.idusuario ";
+			
+			if(isset($_POST["dependencia"])){
+			$idDependenciaSeleccionada=$_POST['dependencia'];
+			
+			$cadena=$cadena." and actividad.iddependencia=$idDependenciaSeleccionada " ;	
+
+			}
+			
+			//order by
+			$cadena = $cadena." ORDER BY  informe.idinforme DESC;" ;
+			
+			//echo $cadena;
+			$gsent = $conn->prepare($cadena);
             $gsent->execute();
+			
             while ($resultado = $gsent->fetch(PDO::FETCH_ASSOC))
             {
-                $Folio=$resultado['idInforme'];
-                $Fecha=$resultado['fecha'];
-                $Plan=$resultado['nombreplandesarrollo'];
-                $Elaboro=$resultado['nombrecompleto'];
-                $Dependencia=$resultado['nombredependencia'];
+				$identificador=$resultado['idinforme'];
+                $folio=$resultado['idinforme'];
+                 $fechaInforme=$resultado['fecha'];
+              
+                $elaboro=$resultado['nombrecompleto'];
+                $dependencia=$resultado['nombredependencia'];
                 ?>
 
                 <tr>
                     <td>
-                        <?php  echo   $Folio ?>
+                        #<?php  echo   $folio ?>
                     </td>
                     <td>
-                        <?php  echo   $Fecha ?>
+                      <?php echo $fechaInforme ?>
                     </td>
                     <td>
-                        <?php  echo   $Plan ?>
+                   <?php echo $elaboro ?>
+                    </td>
+                    <td >
+                    <?php echo $dependencia ?>
                     </td>
                     <td>
-                        <?php echo $Elaboro ?>
+                         <input class="form-check-input" type="checkbox" value="<?php echo $identificador ?>" id="id" name="id[]">
                     </td>
-                    <td>
-                        <?php echo $Dependencia ?>
-                    </td>
+				
+
+			
                 </tr>
                 <?php
             }
             ?>
         </table>
+			<button type="submit" name="enviar" id="enviar" class="btn btn-primary">Generar Informe</button>
     </div>
+	</form>
 </div>
-<?php include footer.php ?>
+<?php include 'footer.php' ?>

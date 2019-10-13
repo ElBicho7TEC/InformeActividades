@@ -38,7 +38,9 @@ include 'header.php';
           <?php
             include 'conexion.php'; //se incluye la conexión
             $idUsuarios;
-            $ConsultaActividades = $conn->prepare("select actividad.idactividad,actividad.nombreactividad,actividad.fechaano,actividad.fechadia,actividad.fechames from actividad inner join historial_actividad WHERE actividad.idactividad=historial_actividad.idactividad and historial_actividad.idusuario=$idUsuarios ORDER BY actividad.idactividad DESC");  //se realiza la consulta de las actividades
+            $ConsultaActividades = $conn->prepare("select actividad.idactividad,actividad.nombreactividad,actividad.fechaano,actividad.fechadia,actividad.fechames
+			from actividad inner join historial_actividad WHERE actividad.idactividad=historial_actividad.idactividad and historial_actividad.idusuario=$idUsuarios 
+			ORDER BY actividad.idactividad DESC");  //se realiza la consulta de las actividades
              $ConsultaActividades->execute(); // se ejecuta la consulta
              $ResultadoActividades = $ConsultaActividades->fetchAll(); //se obtienen los datos de la consulta
                 foreach ($ResultadoActividades as $Datos)
